@@ -9,7 +9,7 @@ const Light: React.FC = () => {
   className="absolute top-0 right-0 z-[2]  w-64 h-64 rounded-full"
 
   initial={{ x: '30%', y: '30%' }}
-  animate={{ x: ['-250%', '30%', '-50%'], y: ['-10%', '-30%', '160%'] }}
+  animate={{ x: ['-250%', '-10%', '-50%'], y: ['-10%', '30%', '160%'] }}
   transition={{
     duration: 9, 
     ease: ['easeOut', 'linear', 'easeIn'], 
@@ -19,16 +19,12 @@ const Light: React.FC = () => {
   }}
 
 >
-<div className="pattern"></div>
-<div className="overlay"></div>
-<div className="pattern"></div>
-
 </motion.div>
 <motion.div
     id="light2"
   className="absolute top-0 right-0 z-[2]  w-64 h-64 rounded-full"
 
-  initial={{ x: '30%', y: '30%' }}
+  initial={{ x: '50%', y: '50%' }}
   animate={{ x: ['-350%', '30%', '-50%'], y: ['100%', '-30%', '100%'] }}
   transition={{
     duration: 9, 
@@ -39,11 +35,8 @@ const Light: React.FC = () => {
   }}
 
 >
-<div className="pattern"></div>
-<div className="overlay"></div>
-<div className="pattern"></div>
-
 </motion.div>
+
 <motion.div
     id="light3"
   className="absolute bottom-10 left-10 z-[2]  w-64 h-64 rounded-full"
@@ -59,10 +52,6 @@ const Light: React.FC = () => {
   }}
 
 >
-<div className="pattern"></div>
-<div className="overlay"></div>
-<div className="pattern"></div>
-
 </motion.div>
 
 </>
