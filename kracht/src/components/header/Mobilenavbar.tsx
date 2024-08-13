@@ -1,30 +1,22 @@
 
 import React, { useState } from 'react';
+import './headerandnav.css'
+
 type DropdownType = 'diensten' | 'over-ons' | null;
 
 
 const Mobilenavbar:React.FC = () => {
-  {console.log('Rendering component')}
-  console.log('Component rendered');
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [activeDropdown, setActiveDropdown] = useState<DropdownType>(null);
 
 
   const openNav = () => {
-    console.log('openNav called');
-    console.log('Before update:', isNavOpen);
     setIsNavOpen(true);
-    console.log('After update:', isNavOpen);
   };
   
   const closeNav = () => {
-    console.log('closeNav called');
-    console.log('Before update:', isNavOpen);
     setIsNavOpen(false);
-    console.log('After update:', isNavOpen);
   };
-
-  // Handles dropdown toggling
   const handleDropdownToggle = (dropdown: DropdownType) => {
     setActiveDropdown(prev => (prev === dropdown ? null : dropdown));
   };
