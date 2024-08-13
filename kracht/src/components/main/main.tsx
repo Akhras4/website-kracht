@@ -1,86 +1,65 @@
 import React from "react"
 // import img from '../../assets/main.jpg'
 import  './main.css'
+import TextButton from "../TextButton/TextButton";
 
 
-
-const Main: React.FC = () => {
-  return (
-    <main id="main" className="mt-16 flex justify-end gap-10 pt-14 ">
-      <div id="left" className="z-50 w-6/12 h-6/12 ">
-        <div id="titel" className="relative visibleContent animate-title  pointer-events-auto z-515">
-          <h1 className=" text-white leading-h1 ">
-            discover 
-            <span className="text-home-hero-h1 leading-h1 fluid ml-5">your</span>
-            <br />
-            digital
-            <br />
-            happiness
-          </h1>
-        </div>
-        <div className="visibleContent relative animate-description mt-5 col-start-2 col-span-4 pointer-events-auto">
-          <div className="mt-2 text-white leading-p">
-            <p dir="ltr" className="">
-              Kwalitatieve leads genereren, je producten online aan de man
-              brengen, succesvol medewerkers aantrekken, bedrijfsprocessen
-              optimaliseren of je online aanwezigheid nog sterker, beter maken?
-            </p>
-            <p dir="ltr" className="">
+interface MainProps {
+    imageSrc: string;
+    imageAlt: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    buttonText: string;
+    buttonLink: string;
+  }
+  
+  const Main: React.FC<MainProps> = ({
+    imageSrc,
+    imageAlt,
+    title,
+    subtitle,
+    description,
+    buttonText,
+    buttonLink
+  }) => {
+    return (
+      <main id="main" className="mt-16 flex justify-end gap-10 pt-14">
+        <div id="left" className="z-50 w-6/12 h-6/12">
+          <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515">
+            <h1 className="text-white leading-h1">
+              {title}
+              <span className="text-home-hero-h1 leading-h1 fluid ml-5">{subtitle}</span>
               <br />
-            </p>
-            <p dir="ltr" className="">
-              Wat je doel ook is, wij hebben de kennis, de ervaring en het team
-              om jou vooruit te helpen.
+              digital
               <br />
-            </p>
+              happiness
+            </h1>
           </div>
-        </div>
-        <div className="visibleContent relative animate-cta mt-2 col-start-2 col-span-3 pointer-events-auto"
-       >
-          <div className="mt-5"
-          >
-            <a
-              href="/over-ons/werkwijze/"
-              className="nuxt-link-prefetched"
-              title="Ontdek onze werkwijze"
-            >
-              <button className="cursorPlus group !text-white py-4 px-10 rounded-full overflow-hidden w-full lg:w-auto" style={{backgroundColor:'#dc1f5b'}}>
-                <div className="overflow-hidden">
-                  <div className="flex flex-col h-auto lg:group-hover:-translate-y-8 transition duration-500 ease-in-out  ">
-                    <span className="whitespace-nowrap pt-2 ">
-                      ontdek onze werkwijze
-                    </span>
-                    <span className="left-0 bottom-0 m-auto translate-y-4 text-center w-full whitespace-nowrap">
-                      ontdek onze werkwijze
-                    </span>
-                  </div>
-                </div>
-              </button>
-            </a>
+          <div className="visibleContent relative animate-description mt-5 col-start-2 col-span-4 pointer-events-auto">
+            <div className="mt-2 text-white leading-p">
+              <p dir="ltr">{description}</p>
+            </div>
           </div>
+          <TextButton
+            text={buttonText}
+            link={buttonLink}
+          />
         </div>
-      </div>
-      <div
-        id="right"
-        className=""
-      >
-        <div className="">
-          <picture>
-            <source
-              data-sizes="100vw"
-              type="image/webp"
-            />
+        <div id="right">
+          <div>
             <img
-              src="https://d30yna6yll9wpi.cloudfront.net/niice/Brandshoot-2024/_1000x1000_crop_center-center_100_none/Niice-brandshoot-87.jpeg"
-              title="jrach brandshoot 87"
-              alt="kract brandshoot 87"
+              src={imageSrc}
+              title={imageAlt}
+              alt={imageAlt}
               className="w-full h-full object-cover rounded-full"
             />
-          </picture>
+          </div>
         </div>
-      </div>
-    </main>
-  );
-};
+      </main>
+    );
+  };
+  
+  export default Main
 
-export default Main;
+

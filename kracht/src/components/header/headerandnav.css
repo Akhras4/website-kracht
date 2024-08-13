@@ -1,0 +1,10 @@
+.header {
+    position: relative;
+    z-index: 10; 
+  }
+  
+  .mobilenavbar {
+    position: relative;
+    z-index: 20;
+  }
+  

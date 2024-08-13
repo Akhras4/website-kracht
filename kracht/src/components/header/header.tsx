@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './navbar';
+import './headerandnav.css'
 
 const Header: React.FC  = () => {
   return (

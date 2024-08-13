@@ -21,106 +21,12 @@
 
 
 }
-.header {
-  position: relative;
-  z-index: 10; 
-}
 
-.mobilenavbar {
-  position: relative;
-  z-index: 20; /* Ensure mobile navbar is above the light */
-}
-
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and ( max-width: 800px ){
+  #root,.App{
+    margin: 0.5rem ;
+    padding: 0;
   }
 }
-#light{
-  background: radial-gradient(circle, rgba(255, 0, 136, 0.451), rgb(226, 73, 106),rgba(174, 116, 116, 0.291),0c1b24, 0c1b24);
 
-  
-  overflow: hidden;
-}
-#light::before {
-  content: '';
-  position: absolute;
-  
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgb(226, 73, 106) 0%, rgba(255, 0, 136, 0.451) 30%, rgb(12, 27, 36) 60%, rgb(12, 27, 36) 100%);
-  filter: drop-shadow(0 0 8rem rgb(93, 166, 200)); /* Light shadow effect */
-  mix-blend-mode: multiply; /* Blends the radial gradient with the background color */
-  opacity: 1; /* Adjust opacity to control intensity */
-  pointer-events: none; /* Allows interactions with underlying content */
-}
-
-.pattern {
-  position: absolute;
-  filter: drop-shadow(0 0 8rem rgb(1, 170, 248));
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 21px, transparent 1px), 
-                    radial-gradient(circle, rgba(255, 255, 255, 0.018) 21px, transparent 1px);
-  background-size: 10px 10px; /* Adjust the size to make points closer or farther */
-  background-position: 0 0, 10px 10px; /* Offset the second pattern for a grid effect */
-  pointer-events: none; /* Prevent the pattern from blocking interactions */
-  opacity: 0.1; /* Make the pattern subtle */
-}
-
-#light2{
-  background: radial-gradient(circle, rgba(0, 187, 255, 0.451), rgb(73, 162, 226),rgba(116, 162, 174, 0.291),0c1b24, 0c1b24);
-
-  
-  overflow: hidden;
-}
-#light2::before {
-  content: '';
-  position: absolute;
-  
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgb(73, 93, 226) 0%, rgba(0, 110, 255, 0.451) 30%, rgb(12, 30, 36) 60%, rgb(12, 27, 36) 100%);
-  filter: drop-shadow(0 3 80rem rgb(141, 212, 245)); /* Light shadow effect */
-  mix-blend-mode: multiply; 
-  opacity: 1; 
-  pointer-events: none; 
-}
-#light3{
-  background: radial-gradient(circle, rgba(0, 187, 255, 0.451), rgb(73, 162, 226),rgba(116, 162, 174, 0.291),0c1b24, 0c1b24);
-
-  
-  overflow: hidden;
-}
-#light3::before {
-  content: '';
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgb(236, 249, 45) 0%, rgba(212, 255, 0, 0.451) 30%, rgb(12, 30, 36) 60%, rgb(12, 27, 36) 100%);
-  filter: drop-shadow(0 3 80rem rgb(141, 212, 245)); /* Light shadow effect */
-  mix-blend-mode: multiply; 
-  opacity: 1; 
-  pointer-events: none; 
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
