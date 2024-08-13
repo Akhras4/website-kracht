@@ -1,15 +1,20 @@
 
 import './App.css'
-import Header from './components/header'
-import Mobilenavbar from './components/Mobilenavbar'
+import Header from './components/header/header'
+import Mobilenavbar from './components/header/Mobilenavbar'
+import Light from './components/light/light'
+import Main from './components/main/main'
 
 function App() {
 
   return (
-    <>
+    <div className='App'>
+       <Light />
       <Header />
       <Mobilenavbar />
-    </>
+      <Main />
+     
+    </div>
   )
 }
 
