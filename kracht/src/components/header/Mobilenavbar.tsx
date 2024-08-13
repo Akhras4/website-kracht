@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 type DropdownType = 'diensten' | 'over-ons' | null;
 
@@ -5,7 +6,7 @@ type DropdownType = 'diensten' | 'over-ons' | null;
 const Mobilenavbar:React.FC = () => {
   {console.log('Rendering component')}
   console.log('Component rendered');
-  const [isNavOpen, setIsNavOpen] = useState<boolean>(true);
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [activeDropdown, setActiveDropdown] = useState<DropdownType>(null);
 
 
@@ -33,7 +34,7 @@ const Mobilenavbar:React.FC = () => {
   return (
     <div>
     <div
-  className={`lg:hidden fixed top-12 right-4 z-[99999] cursor-pointer text-white`}
+  className={`lg:hidden fixed top-10 right-4 z-[99999] cursor-pointer text-white`}
   onClick={openNav} 
   style={{
     height: isNavOpen ? '0vh' : '20vh',
@@ -51,16 +52,19 @@ const Mobilenavbar:React.FC = () => {
     <div
       className={`lg:hidden fixed top-0 left-0 w-full h-full z-[99999] transition-all duration-700 ease-in-out`}
       style={{
-        backgroundColor: '#0c1c25',
+        
         height: isNavOpen ? '100vh' : '0vh',
         overflow: 'hidden',
+        backgroundColor:'#0c1c25'
       }}
     >
       <div className="relative h-full">
         <div className="absolute left-0 top-0 w-full h-full z-[105]">
-          <div className="container mx-auto h-full">
+          <div className="container mx-auto h-full"
+          >
             {/* Close Button */}
-            <div className="pt-12 w-full flex justify-end items-center z-[100] cursor-pointer"onClick={closeNav}>
+            <div className="pt-12 w-full flex justify-end items-center z-[100] cursor-pointer"onClick={closeNav}
+            >
               <div className="cursor-pointer flex items-center gap-3 mr-4" 
                     >
                 <span className="text-white text-base">sluiten</span>
@@ -71,7 +75,7 @@ const Mobilenavbar:React.FC = () => {
               </div>
             </div>
             {/* Navigation Links */}
-            <nav className="mt-10 relative h-full flex flex-col justify-center lg:justify-start items-start gap-4">
+            <nav className="mt-10 relative  flex flex-col justify-center lg:justify-start items-start gap-4">
               {/* Dropdown for 'diensten' */}
               <div className="w-full">
                 <div

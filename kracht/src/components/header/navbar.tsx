@@ -11,7 +11,7 @@ const Navbar:React.FC= () => {
         className="fixed py-2 px-5 bg-[#1C313D] rounded-full duration-200 ease-in-out z-0"
         style={{ opacity: 0, left: "858.203px", top: "35.25px", height: "41.25px", width: "113.844px" }}
       ></div>
-      <div slide-hover="1" className="group py-2 px-5 relative z-10">
+      <div slide-hover="1"  className=" group py-2 px-5 relative z-10">
         <a
           href="/diensten/social-content/"
           aria-current="page"
@@ -34,8 +34,8 @@ const Navbar:React.FC= () => {
             ></path>
           </svg>
         </a>
-        <div className="pt-6 absolute top-full left-0 min-w-[280px] h-fit pointer-events-none group-hover:pointer-events-auto">
-          <div className="p-5 bg-dark rounded-[20px] -translate-y-[15%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-200 ease-out flex flex-col items-start justify-start z-0">
+        <div className=" pt-6 absolute top-full left-0 min-w-[280px] h-fit pointer-events-none group-hover:pointer-events-auto">
+          <div className="bg-[#1C313D] p-5 bg-dark rounded-[20px] -translate-y-[15%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-200 ease-out flex flex-col items-start justify-start z-0">
             <a
               href="/over-ons/"
               className="inline-block py-2 px-5 rounded-full text-base font-medium z-20 nuxt-link-prefetched"
@@ -74,7 +74,7 @@ const Navbar:React.FC= () => {
       <div slide-hover="1" className="group py-2 px-5 relative z-10">
         <a
           href="/over-ons/"
-          className="flex items-center gap-1 nuxt-link-prefetched"
+          className="flex items-center gap-1 nuxt-link-prefetched "
           target="_self"
           title="over ons"
         >
@@ -93,8 +93,8 @@ const Navbar:React.FC= () => {
             ></path>
           </svg>
         </a>
-        <div className="pt-6 absolute top-full left-0 min-w-[280px] h-fit pointer-events-none group-hover:pointer-events-auto">
-          <div className="p-5 bg-dark rounded-[20px] -translate-y-[15%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-200 ease-out flex flex-col items-start justify-start z-0">
+        <div className=" pt-6 absolute top-full left-0 min-w-[280px] h-fit pointer-events-none group-hover:pointer-events-auto">
+          <div className=" bg-[#1C313D] p-5 bg-dark rounded-[20px] -translate-y-[15%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-200 ease-out flex flex-col items-start justify-start z-0">
             <a
               href="/over-ons/"
               className="inline-block py-2 px-5 rounded-full text-base font-medium z-20 nuxt-link-prefetched"
