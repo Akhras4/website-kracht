@@ -4,6 +4,7 @@ import Header from './components/header/header'
 import Mobilenavbar from './components/header/Mobilenavbar'
 import Light from './components/light/light'
 import Main from './components/main/main'
+import Section1 from './components/sections/section1'
 
 function App() {
 
@@ -62,7 +63,12 @@ function App() {
       buttonText="ontdek onze werkwijze"
       buttonLink="/over-ons/werkwijze/"
     />
-     
+     <Section1
+      titelSection1='Jouw digital business'
+      titelSection2='partner voor elke'
+      titelSection3=' uitdaging'
+      titelDisc=""
+      />
     </div>
   )
 }
