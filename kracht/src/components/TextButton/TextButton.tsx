@@ -7,7 +7,7 @@ interface TextButtonProps {
 
 const TextButton: React.FC<TextButtonProps> = ({ text, link }) => {
   return (
-    <div className="visibleContent relative animate-cta mt-2 col-start-2 col-span-3 pointer-events-auto">
+
       <div className="mt-5">
         <a
           href={link}
@@ -15,8 +15,8 @@ const TextButton: React.FC<TextButtonProps> = ({ text, link }) => {
           title={`Ontdek ${text}`}
         >
           <button
-            className="cursorPlus group !text-white py-4 px-10 rounded-full overflow-hidden w-full lg:w-auto"
-            style={{ backgroundColor: '#dc1f5b' }}
+            className="cursorPlus group !text-white py-4 px-10 rounded-full overflow-hidden w-full lg:w-full"
+            style={{ backgroundColor: '#dc1f5b',width:'100%', height:'100%' }}
           >
             <div className="overflow-hidden">
               <div className="flex flex-col h-auto lg:group-hover:-translate-y-8 transition duration-500 ease-in-out">
@@ -31,7 +31,6 @@ const TextButton: React.FC<TextButtonProps> = ({ text, link }) => {
           </button>
         </a>
       </div>
-    </div>
   );
 };
 

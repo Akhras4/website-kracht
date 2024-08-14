@@ -26,3 +26,24 @@
     box-sizing: border-box;
     margin-bottom: 3rem;
 }
+#flexitem .sort{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+#flexitem .sort:hover {
+        gap: 1rem; 
+        cursor: pointer;
+    }
+
+    #flexitem svg{
+width: 30px;
+height: 8px;
+    }

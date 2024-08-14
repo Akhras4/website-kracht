@@ -11,11 +11,13 @@
   .pinkimg{
   top:0;
   left: 0;
-  position:absolute
+  position:absolute;
+
   }
   .blueimg{
   
     position: absolute;
     top:10vh;
     left:20vh;
+
     }
