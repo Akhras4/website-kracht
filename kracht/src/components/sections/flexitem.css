@@ -1,0 +1,28 @@
+
+.flexitemtext .paragraph-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+}
+.flexitemtext{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:20px;
+    width: 100%;
+}
+#flexitem{
+    display:flex;
+    align-items: flex-start;
+    flex-direction:column;
+    min-width: 290px ;
+    width:290px ;
+    color:white;
+    gap:20px;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+}

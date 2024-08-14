@@ -1,0 +1,21 @@
+.imgcon{
+    position: absolute;  
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+    z-index: -1;
+    pointer-events: none;
+  
+  }
+  .pinkimg{
+  top:0;
+  left: 0;
+  position:absolute
+  }
+  .blueimg{
+  
+    position: absolute;
+    top:10vh;
+    left:20vh;
+    }

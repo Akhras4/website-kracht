@@ -1,0 +1,87 @@
+ section{
+    width: 100vw;
+    height: 200vh;
+    overflow: visible;
+    position: relative;
+}
+.section hgroup{
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ z-index: 100;
+ margin-top: 3rem;
+}
+.section h1{
+    font-size: calc(1rem + 3vw);
+    line-height: 1.2;
+    font-weight: bold;
+    color: white;
+}
+.sectionFlexcontiner{
+display:flex;
+flex-direction: row;
+z-index: 100;
+margin-top: 7vh;
+width: 100vw;
+height: fit-content;
+gap:15px;
+overflow-x: hidden;
+overflow-y: visible;
+position: relative;
+}
+
+
+.sectionFlexcontiner::-webkit-scrollbar {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the scrollbar */
+    width: 100%;
+}
+
+.sectionFlexcontiner::-webkit-scrollbar-track {
+    background: white; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+.sectionFlexcontiner::-webkit-scrollbar-thumb {
+    background: black; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    height: 5px; /* Adjust this value to make the thumb shorter */
+}
+
+/* Change scrollbar thumb color on hover */
+.sectionFlexcontiner::-webkit-scrollbar-thumb:hover {
+    background: darkgrey; /* Color of the scrollbar thumb on hover */
+}
+
+/* Set the cursor to grab for the entire scrollable container */
+.sectionFlexcontiner {
+    cursor: grab; /* Cursor when not dragging */
+}
+
+/* Change cursor to grabbing when dragging */
+.sectionFlexcontiner:active {
+    cursor: grabbing; /* Cursor when actively dragging */
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .sectionFlexcontiner {
+      flex-wrap: nowrap;
+      overflow-x:scroll; 
+      padding: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
