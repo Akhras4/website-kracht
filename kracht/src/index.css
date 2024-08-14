@@ -1,6 +1,8 @@
 html{
   overflow-y: visible;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+ 
 }
 
 a {

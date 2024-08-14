@@ -78,6 +78,8 @@ const Section1:React.FC<sectionProps>=({
                 numberAndSort='#535bf2'
                /> 
             </div>
+            
+            
         </section>
 
  

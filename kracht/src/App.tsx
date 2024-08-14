@@ -5,6 +5,8 @@ import Mobilenavbar from './components/header/Mobilenavbar'
 import Light from './components/light/light'
 import Main from './components/main/main'
 import Section1 from './components/sections/section1'
+import Section2 from './components/sections/section2'
+import kantoor1 from './assets/img/section2/kracht-brandshoot-1.webp'
 
 function App() {
 
@@ -69,6 +71,19 @@ function App() {
       titelSection3=' uitdaging'
       titelDisc=""
       />
+      <Section2 
+      title='Voor elk vraagstuk een oplossing'
+      description1='Ben jij klaar voor de volgende stap met jouw bedrijf? Klaar voor meer werknemers, sales, klanten? Laten we samenwerken aan je vraagstuk.'
+      description2='Al tijdens onze eerste gesprekken brengen we samen jouw doelen helder in kaart en werken we een doordachte strategie uit. Met de plannen die daaruit volgen brengen we die stip op je horizon binnen handbereik.'
+      description3='Terwijl jij focust op dat waar jij goed in bent, combineren wij design, development, copy, data, foto- en videografie tot de beste mix voor jou.'
+      description4='Die combinatie en de route zijn elke keer anders. Onze werkwijze niet.'
+      link=''
+      text='dit is onze werkwijze'
+      direction='row'
+      imgSrc = {kantoor1}
+      imgAlt='kantoor1'
+       />
+      
     </div>
   )
 }

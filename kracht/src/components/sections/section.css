@@ -1,9 +1,10 @@
- section{
+section{
     width: 100vw;
-    height: 200vh;
+    MIN-height:100%;
     overflow: visible;
     position: relative;
 }
+
 .section hgroup{
  display: flex;
  flex-direction: column;
@@ -28,43 +29,10 @@ height: fit-content;
 gap:15px;
 overflow-x: hidden;
 overflow-y: visible;
-position: relative;
 }
 
 
-.sectionFlexcontiner::-webkit-scrollbar {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Center the scrollbar */
-    width: 100%;
-}
 
-.sectionFlexcontiner::-webkit-scrollbar-track {
-    background: white; /* Background of the scrollbar track */
-    border-radius: 10px; /* Rounded corners for the track */
-}
-
-.sectionFlexcontiner::-webkit-scrollbar-thumb {
-    background: black; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners for the thumb */
-    height: 5px; /* Adjust this value to make the thumb shorter */
-}
-
-/* Change scrollbar thumb color on hover */
-.sectionFlexcontiner::-webkit-scrollbar-thumb:hover {
-    background: darkgrey; /* Color of the scrollbar thumb on hover */
-}
-
-/* Set the cursor to grab for the entire scrollable container */
-.sectionFlexcontiner {
-    cursor: grab; /* Cursor when not dragging */
-}
-
-/* Change cursor to grabbing when dragging */
-.sectionFlexcontiner:active {
-    cursor: grabbing; /* Cursor when actively dragging */
-}
 
 
 
@@ -74,7 +42,48 @@ position: relative;
       flex-wrap: nowrap;
       overflow-x:scroll; 
       padding: 10px;
+      position: relative;
     }
+    
+    
+/* WebKit browsers (Chrome, Safari) */
+.sectionFlexcontiner::-webkit-scrollbar {
+    height: 5px; /* Height of the scrollbar */
+}
+
+.sectionFlexcontiner::-webkit-scrollbar-track {
+    background: white; /* Background of the scrollbar track */
+}
+
+/* Style of the scrollbar thumb */
+.sectionFlexcontiner::-webkit-scrollbar-thumb {
+    background: rgb(28, 124, 214); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    height: 6px; /* Height of the thumb */
+    width: 20vw; /* Width of the thumb */
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust positioning to be centered */
+}
+
+/* Optional: Add hover effect for the thumb */
+.sectionFlexcontiner::-webkit-scrollbar-thumb:hover {
+    background: rgb(156, 46, 129); /* Color of the scrollbar thumb on hover */
+}
+
+/* Apply cursor only to scrollbar area */
+.sectionFlexcontiner::-webkit-scrollbar-thumb {
+    cursor: grab; /* Cursor when not dragging */
+}
+.sectionFlexcontiner .scrollbar-overlay {
+    cursor: grab; /* Cursor when not dragging */
+}
+
+/* Change cursor to grabbing when dragging */
+.sectionFlexcontiner::-webkit-scrollbar-thumb:active {
+    cursor: grabbing; /* Cursor when actively dragging */
+}
   }
 
 

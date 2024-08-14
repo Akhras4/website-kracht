@@ -33,7 +33,7 @@
 
 
 
-@media screen and ( max-width: 800px ){
+@media screen and ( max-width: 1200px ){
   #root,.App{
     margin: 0.5rem ;
     padding: 0;
