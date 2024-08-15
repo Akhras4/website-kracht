@@ -2,6 +2,7 @@ import React from "react";
 import './main.css';
 import TextButton from "../TextButton/TextButton";
 import { motion } from 'framer-motion';
+import Light from "../light/light";
 
 interface MainProps {
   imageSrc: string;
@@ -70,6 +71,20 @@ const Main: React.FC<MainProps> = ({
           />
         </div>
       </motion.div>
+      <Light
+        id="light3"
+        className="bottom-10 left-10 z-[2]"
+        initial={{ x: '-20%', y: '-20%' }}
+        animate={{ x: ['10%', '-160%', '100%'], y: ['-10%', '-100%', '-80%'] }}
+        transition={{
+          duration: 9,
+          ease: ['easeOut', 'linear', 'easeIn'],
+          times: [0, 0.5, 1],
+          repeat: Infinity,
+          repeatType: 'reverse',
+          
+        }}
+        ></Light>
     </main>
   );
 };

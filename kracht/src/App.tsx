@@ -13,6 +13,7 @@ import digitaletransform from './assets/img/section1flexitem/krachtkantoor.webp'
 import demandleadgen from './assets/img/section1flexitem/karctbranndshot.webp'
 import ecommerce from './assets/img/section1flexitem/ecom.webp'
 import reccruitment from './assets/img/section1flexitem/krachtdeman.webp'
+import Section3 from './components/sections/section3'
 
 function App() {
 
@@ -183,7 +184,7 @@ function App() {
       /> 
       </Section1>
 
-
+      <Section3 />
       <Section2 
       title='Voor elk vraagstuk een oplossing'
       description1='Ben jij klaar voor de volgende stap met jouw bedrijf? Klaar voor meer werknemers, sales, klanten? Laten we samenwerken aan je vraagstuk.'
@@ -196,7 +197,7 @@ function App() {
       imgSrc = {kantoor2}
       imgAlt='kantoor1'
        />
-      
+     
     </div>
   )
 }

@@ -21,3 +21,16 @@
     left:20vh;
 
     }
+    @media screen and (max-width: 800px) {
+      .imgcon{
+
+        width: 700px;
+        height: 700px;
+        opacity: 1;
+      }
+      .blueimg{
+        top:20vh;
+        left:30vh;
+    
+        }
+    }
