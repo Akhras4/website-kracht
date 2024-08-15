@@ -14,6 +14,7 @@ import demandleadgen from './assets/img/section1flexitem/karctbranndshot.webp'
 import ecommerce from './assets/img/section1flexitem/ecom.webp'
 import reccruitment from './assets/img/section1flexitem/krachtdeman.webp'
 import Section3 from './components/sections/section3'
+import Footer from './components/footer/footer'
 
 function App() {
 
@@ -38,20 +39,6 @@ function App() {
         className="top-0 left-0 z-[2]"
         initial={{ x: '50%', y: '50%' }}
         animate={{ x: ['-150%', '30%', '-50%'], y: ['100%', '-30%', '100%'] }}
-        transition={{
-          duration: 9,
-          ease: ['easeOut', 'linear', 'easeIn'],
-          times: [0, 0.5, 1],
-          repeat: Infinity,
-          repeatType: 'reverse',
-        }}
-      />
-
-      <Light
-        id="light3"
-        className="bottom-10 left-10 z-[2]"
-        initial={{ x: '-20%', y: '-20%' }}
-        animate={{ x: ['100%', '-10%', '100%'], y: ['-10%', '-100%', '-10%'] }}
         transition={{
           duration: 9,
           ease: ['easeOut', 'linear', 'easeIn'],
@@ -197,7 +184,7 @@ function App() {
       imgSrc = {kantoor2}
       imgAlt='kantoor1'
        />
-     
+     <Footer />
     </div>
   )
 }

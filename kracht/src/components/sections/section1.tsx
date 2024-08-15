@@ -35,9 +35,7 @@ const Section1:React.FC<sectionProps>=({
         </hgroup>
             <div className="sectionFlexcontiner">
             {children}
-            </div>
-            
-            
+            </div>   
         </section>
 
  

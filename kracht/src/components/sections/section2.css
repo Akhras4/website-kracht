@@ -2,7 +2,7 @@
     display: flex;
     width: 100vw;
     height: 120vh;
-    z-index: 15;
+    z-index: 155;
     gap: 3rem;
     margin-top: 4rem;
     overflow: hidden;
@@ -106,7 +106,7 @@ height: 100%;
 
 @media screen and ( min-width: 1700px ){
     .section2{
-        width: 80vw;
+        width:1400px;
         height: 90%;
         margin-top: 1rem;
     }
