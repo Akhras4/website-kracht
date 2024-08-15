@@ -2,6 +2,7 @@ import React from "react";
 import './main.css';
 import TextButton from "../TextButton/TextButton";
 import { motion } from 'framer-motion';
+import Light from "../light/light";
 
 interface MainProps {
   imageSrc: string;
@@ -34,8 +35,8 @@ const Main: React.FC<MainProps> = ({
           ease: 'easeIn',
         }}
       >
-        <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515">
-          <h1 className="text-white leading-h1">
+        <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515 ">
+          <h1 className="text-white leading-h1  ">
             {title}
             <span className="text-home-hero-h1 leading-h1 fluid ml-5">{subtitle}</span>
             <br />
@@ -70,6 +71,20 @@ const Main: React.FC<MainProps> = ({
           />
         </div>
       </motion.div>
+      <Light
+        id="light3"
+        className="bottom-10 left-10 z-[2]"
+        initial={{ x: '-20%', y: '-20%' }}
+        animate={{ x: ['10%', '-160%', '100%'], y: ['-10%', '-100%', '-80%'] }}
+        transition={{
+          duration: 9,
+          ease: ['easeOut', 'linear', 'easeIn'],
+          times: [0, 0.5, 1],
+          repeat: Infinity,
+          repeatType: 'reverse',
+          
+        }}
+        ></Light>
     </main>
   );
 };

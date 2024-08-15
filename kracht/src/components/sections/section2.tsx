@@ -30,24 +30,49 @@ const section2:React.FC<section2Props>=({
 })=>{
    
    return(
-    <section className='section2'style={{ flexDirection: direction}}>
-        <div className='part1'>
-         <img src={imgSrc} alt={imgAlt} />
-        </div>
-        <div className='part2'>
-            <hgroup>
-                <h1>{title}</h1>
-                <br /> 
-                <p>{description1}</p>
-                <br /> 
-                <p>{description2}</p> 
-                <br /> 
-                <p>{description3}</p> 
-                <br /> 
-                <p>{description4}</p> 
-            </hgroup>
-            <TextButton text={text} link={link} />
-        </div>
+    <section className='section2'>
+          {direction==='row-reverse'? (
+            <>
+             <div className='part2'>
+             <hgroup>
+                 <h1>{title}</h1>
+                 <br /> 
+                 <p>{description1}</p>
+                 <br /> 
+                 <p>{description2}</p> 
+                 <br /> 
+                 <p>{description3}</p> 
+                 <br /> 
+                 <p>{description4}</p> 
+             </hgroup>
+             <TextButton text={text} link={link} />
+         </div>
+            <div className='part1'>
+            <img src={imgSrc} alt={imgAlt} />
+           </div>
+          </>
+          ) : (
+            <>
+            <div className='part1'>
+                    <img src={imgSrc} alt={imgAlt} />
+                    </div>
+                    <div className='part2'>
+                        <hgroup>
+                            <h1>{title}</h1>
+                            <br /> 
+                            <p>{description1}</p>
+                            <br /> 
+                            <p>{description2}</p> 
+                            <br /> 
+                            <p>{description3}</p> 
+                            <br /> 
+                            <p>{description4}</p> 
+                        </hgroup>
+                        <TextButton text={text} link={link} />
+                    </div>
+                    
+                    </>
+                    )}
     </section>
    ) 
 }

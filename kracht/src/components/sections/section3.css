@@ -1,0 +1,65 @@
+.logos-section {
+    width: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:14px;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  
+  .logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 33vh;
+    background-color: white;
+    border-radius: 30px;
+
+
+  }
+  .logo-item img {
+    max-height: 50px;
+    width: auto;
+}
+  .logo-item img {
+    filter: grayscale(1);
+}
+.logo-item img:hover{
+    filter: grayscale(0);
+  
+}
+
+
+  
+
+  
+
+  
+  @media (max-width: 767px) {
+    .logo-item {
+        width: 40vw;
+        height: 33vh;
+    }
+       
+  }
+  @media (max-width: 384px) {
+    .logo-item {
+        border-radius: 10px;
+    }
+  }
+  @media screen and ( min-width: 1700px ){
+    .logo-item {
+
+      width: 30%;
+      height: 300px;
+
+  
+    }
+  
+  }
+
+
+  

@@ -1,0 +1,29 @@
+import React from "react"
+import Logo from '../../assets/img/section3/Ami-logo.png'
+import Logo2 from '../../assets/img/section3/Fieldpiece-logo.jpg'
+import Logo3 from '../../assets/img/section3/Gazelle-Logo-Koninklijke-Royal-Blue-RGB-30dpi.png'
+import Logo4 from '../../assets/img/section3/Maron.png'
+import Logo5 from '../../assets/img/section3/Meekes-logo-transparant_2024-08-05-154620_kuwl.png'
+import Logo6 from '../../assets/img/section3/Reinten.png'
+import Logo7 from '../../assets/img/section3/Rymax.png'
+import Logo8 from '../../assets/img/section3/Specialized_red_S_black_logotype.png'
+import Logo9 from '../../assets/img/section3/morssinkhof.png'
+import Logo10 from '../../assets/img/section3/transferpersshop.png'
+import './section3.css'
+const Section3:React.FC=()=> {
+    return (
+        <section className="logos-section">
+  <div className="logo-item"><img src={Logo} alt="Logo" /></div>
+  <div className="logo-item"><img src={Logo5} alt="Logo1" /></div>
+  <div className="logo-item"><img src={Logo2} alt="Logo2" /></div>
+  <div className="logo-item"><img src={Logo3} alt="Logo3" /></div>
+  <div className="logo-item"><img src={Logo4} alt="Logo4" /></div>
+  <div className="logo-item"><img src={Logo6} alt="Logo4" /></div>
+  <div className="logo-item"><img src={Logo7} alt="Logo4" /></div>
+  <div className="logo-item"><img src={Logo8} alt="Logo4" /></div>
+  <div className="logo-item"><img src={Logo9} alt="Logo4" /></div>
+  <div className="logo-item"><img src={Logo10} alt="Logo4" /></div>
+  <div className="logo-item"><img src={Logo6} alt="Logo4" /></div>
+</section>
+    )}
+export default Section3

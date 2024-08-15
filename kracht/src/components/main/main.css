@@ -2,6 +2,7 @@
     width: 100%;
     height: fit-content;
     overflow: visible;
+    position: relative;
 
 }
 
@@ -39,6 +40,7 @@ main h1 {
     font-size: calc(2rem + 6vw);
     font-weight: bold;
     line-height: 1.1;
+
 }
 
 main p {
@@ -119,12 +121,44 @@ main p {
         font-size: calc(2rem + 3vw);
         font-weight: bold;
     }
+
+    main button {
+        height: 10vw;
+    }
 }
 
+@media screen and (min-width: 1500px) {
+    main h1 {
+        font-size: calc(2rem + 2vw);
+        margin-top: 9rem;
+    }
+}
 
+@media screen and (min-width: 1700px) {
+    main h1 {
+        font-size: calc(2rem + 1vw);
+    }
+}
 
+@media screen and (min-width: 1900px) {
+    #main {
+        width: 1400px;
+        height: calc(1100px);
+    }
 
+}
 
+@media screen and (min-width: 2000px) {
+    #main {
+        height: calc(1100px + 8vh);
+    }
 
+}
 
+@media screen and (min-width: 2100px) {
+    #main {
 
+        height: calc(1200px + 9vh);
+    }
+
+}
