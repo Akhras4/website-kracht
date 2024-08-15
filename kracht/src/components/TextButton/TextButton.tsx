@@ -16,7 +16,7 @@ const TextButton: React.FC<TextButtonProps> = ({ text, link }) => {
         >
           <button
             className="cursorPlus group !text-white py-4 px-10 rounded-full overflow-hidden w-full lg:w-full"
-            style={{ backgroundColor: '#dc1f5b',width:'100%', height:'100%' }}
+            style={{ backgroundColor: '#dc1f5b',width:'100%', height:'80%' }}
           >
             <div className="overflow-hidden">
               <div className="flex flex-col h-auto lg:group-hover:-translate-y-8 transition duration-500 ease-in-out">

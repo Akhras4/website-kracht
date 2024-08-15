@@ -39,6 +39,7 @@ main h1 {
     font-size: calc(2rem + 6vw);
     font-weight: bold;
     line-height: 1.1;
+    
 }
 
 main p {
@@ -119,7 +120,37 @@ main p {
         font-size: calc(2rem + 3vw);
         font-weight: bold;
     }
+    main button {
+        height: 10vw;
+    }
 }
+@media screen and ( min-width: 1500px ){
+    main h1 {
+        font-size: calc(2rem + 2vw);
+        margin-top: 9rem;
+    }
+}
+
+@media screen and ( min-width: 1800px ){
+    main h1 {
+        font-size: calc(2rem + 1vw);
+    }
+    #right {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        height: fit-content;
+        top: -10rem;
+
+
+    }
+    #left {
+        width: 100%;
+        height: fit-content;
+        margin-top: 20vw;
+    }
+  
+  }
 
 
 

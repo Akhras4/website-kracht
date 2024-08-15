@@ -6,7 +6,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   position: relative;
   background-color: rgba(hsla(318, 81%, 51%, 0.285)a(255, 0, 0, 0.451), rgb(318, 81%, 51%, 0.285), rgba(29, 34, 187, 0.291), alpha);
@@ -30,12 +30,21 @@
   background: black;
   -webkit-border-radius: 1ex;
 }
+h1,h2,h3,p{
+  pointer-events: none;
+}
 
 
 
 @media screen and ( max-width: 1200px ){
-  #root,.App{
+  #root{
     margin: 0.5rem ;
+    padding: 0;
+  }
+}
+@media screen and ( min-width: 1400px ){
+  #root{
+    margin: 1rem auto;
     padding: 0;
   }
 }

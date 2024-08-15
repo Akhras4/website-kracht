@@ -34,8 +34,8 @@ const Main: React.FC<MainProps> = ({
           ease: 'easeIn',
         }}
       >
-        <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515">
-          <h1 className="text-white leading-h1">
+        <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515 ">
+          <h1 className="text-white leading-h1  ">
             {title}
             <span className="text-home-hero-h1 leading-h1 fluid ml-5">{subtitle}</span>
             <br />
