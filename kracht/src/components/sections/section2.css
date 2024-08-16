@@ -66,8 +66,17 @@ height: 100%;
         justify-content: center;
         margin-left: -0.5rem;
     }
-    .section2 .part1 img{
-        aspect-ratio: 4/7;
+    .section2 .part1 {
+        height: 70vh;
+        width: 100%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+    .section2 .part1 img {
+        height: 70vh;
+        width: 80%;
+        align-self: center;
     }
     .section2 .part2 h1{
         font-size: 2rem ;
@@ -82,7 +91,10 @@ height: 100%;
     .section2 .part2{
     width: 90%;
     margin-top: 0rem;
-    }
+    margin-right: 2rem;
+    } .section2 .part2 button{
+        margin-left: 1rem;
+        }
     
 }
 @media screen and ( min-width: 1400px ){

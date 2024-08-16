@@ -1,0 +1,55 @@
+
+.button-container {
+    margin-top: 1.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .button-link {
+    text-decoration: none;
+  }
+
+  .custom-button {
+    cursor: pointer;
+    color: white;
+    padding: 1rem 2.5rem; 
+    border-radius: 9999px;
+    overflow: hidden;
+    background-color: #dc1f5b;
+    max-height: 90px;
+    
+  }
+  
+  .button-content-wrapper {
+    position: relative;
+    overflow: hidden;
+
+  }
+  .button-text-wrapper {
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .button-text {
+    white-space: nowrap;
+    padding-top: 0.5rem;
+  }
+  
+  .button-text-secondary {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateY(19px);
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .custom-button:hover .button-text-wrapper {
+    transform: translateY(-100%);
+  }
+  

@@ -91,7 +91,7 @@ main p {
     }
 
     main button {
-        height: 16vw;
+        height: 16vh;
     }
 }
 
@@ -123,7 +123,7 @@ main p {
     }
 
     main button {
-        height: 10vw;
+        height: fit-content;
     }
 }
 

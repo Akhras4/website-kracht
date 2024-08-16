@@ -15,6 +15,7 @@ import ecommerce from './assets/img/section1flexitem/ecom.webp'
 import reccruitment from './assets/img/section1flexitem/krachtdeman.webp'
 import Section3 from './components/sections/section3'
 import Footer from './components/footer/footer'
+import Emailms from './components/emailms/eamilms'
 
 function App() {
 
@@ -184,6 +185,7 @@ function App() {
       imgSrc = {kantoor2}
       imgAlt='kantoor1'
        />
+     <Emailms />
      <Footer />
     </div>
   )
