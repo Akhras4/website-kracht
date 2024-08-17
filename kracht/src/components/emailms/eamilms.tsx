@@ -15,6 +15,8 @@ const Emailms: React.FC = () => {
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
+        console.log(email)
+        console.log(name)
         alert('Email sent!');
     };
     return (

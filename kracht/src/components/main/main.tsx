@@ -8,7 +8,9 @@ interface MainProps {
   imageSrc: string;
   imageAlt: string;
   title: string;
-  subtitle: string;
+  title1: string |null;
+  title2: string |null;
+  title3:string |null;
   description: string;
   buttonText: string;
   buttonLink: string;
@@ -18,7 +20,9 @@ const Main: React.FC<MainProps> = ({
   imageSrc,
   imageAlt,
   title,
-  subtitle,
+  title1,
+  title2,
+  title3,
   description,
   buttonText,
   buttonLink
@@ -38,11 +42,11 @@ const Main: React.FC<MainProps> = ({
         <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515 ">
           <h1 className="text-white leading-h1  ">
             {title}
-            <span className="text-home-hero-h1 leading-h1 fluid ml-5">{subtitle}</span>
+            <span className="text-home-hero-h1 leading-h1 fluid ml-5">{  title1}</span>
             <br />
-            digital
+            {  title2 ? title2 :null}
             <br />
-            happiness
+            {  title2 ? title3 :null}
           </h1>
         </div>
         <div className="visibleContent relative animate-description mt-5 col-start-2 col-span-4 pointer-events-auto">

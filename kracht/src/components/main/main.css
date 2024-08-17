@@ -17,7 +17,7 @@
 }
 
 #left {
-    width: 30vw
+    width: 30vw;
 }
 
 button.cursorPlus span:nth-child(2) {
@@ -45,6 +45,7 @@ main h1 {
 
 main p {
     font-size: calc(1rem + 0.5vw);
+    text-align: start;
 }
 
 @media screen and (max-width: 800px) {
@@ -73,7 +74,7 @@ main p {
         height: 80vh;
         position: absolute;
         height: fit-content;
-        top: -15rem;
+        top: -11rem;
         right: -7rem;
 
     }
@@ -143,7 +144,7 @@ main p {
 @media screen and (min-width: 1900px) {
     #main {
         width: 1400px;
-        height: calc(1100px);
+        
     }
 
 }

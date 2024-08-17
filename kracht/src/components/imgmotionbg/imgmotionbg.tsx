@@ -8,12 +8,12 @@ const Imgmotionbg:React.FC=()=> {
   return (
     <motion.div
     className="imgcon"
-    initial={{ x: '10%', y: '0%' }}
-    animate={{ x: ['-50%', '30%', '10%'], y: ['-10%', '-30%', '50%'] }}
+    initial={{ x: '-10%', y: '-20%' }}
+    animate={{ x: ['-50%', '30%', '-10%'], y: ['-40%', '-100%', '50%'] }}
         transition={{
           duration: 9,
           ease: ['easeOut', 'linear', 'easeIn'],
-          times: [0, 0.5, 1],
+          times: [0, 1, 1],
           repeat: Infinity,
           repeatType: 'reverse',
         }}  

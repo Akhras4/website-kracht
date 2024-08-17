@@ -2,7 +2,9 @@ import React from 'react'
 import TextButton from '../TextButton/TextButton';
 import './section2.css'
 
+
 interface section2Props{
+    titlePargraf: string;
     title: string;
     description1: string;
     description2: string;
@@ -26,6 +28,7 @@ const section2:React.FC<section2Props>=({
     imgAlt,
     link,
     text,
+    titlePargraf,
 
 })=>{
    
@@ -35,13 +38,14 @@ const section2:React.FC<section2Props>=({
             <>
              <div className='part2'>
              <hgroup>
+                {titlePargraf ?<p id='titlePargraf'>{titlePargraf}</p> : null}
                  <h1>{title}</h1>
                  <br /> 
                  <p>{description1}</p>
                  <br /> 
                  <p>{description2}</p> 
                  <br /> 
-                 <p>{description3}</p> 
+                 <p dangerouslySetInnerHTML={{ __html: description3 }}></p> 
                  <br /> 
                  <p>{description4}</p> 
              </hgroup>
@@ -64,11 +68,12 @@ const section2:React.FC<section2Props>=({
                             <br /> 
                             <p>{description2}</p> 
                             <br /> 
-                            <p>{description3}</p> 
+                            <p dangerouslySetInnerHTML={{ __html: description3 }}></p> 
                             <br /> 
                             <p>{description4}</p> 
                         </hgroup>
-                        <TextButton text={text} link={link} />
+                        { text ? ( <TextButton text={text} link={link} />):(null)}
+                       
                     </div>
                     
                     </>
