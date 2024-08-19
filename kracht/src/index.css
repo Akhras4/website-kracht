@@ -1,8 +1,11 @@
 html{
-  overflow-y: visible;
-  overflow-x: hidden !important;
+
   scroll-behavior: smooth;
- 
+  overflow-y: visible;
+  overflow-x: hidden;
+  max-width: 100vw;
+
+
 }
 
 a {

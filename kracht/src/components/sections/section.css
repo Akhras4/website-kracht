@@ -1,38 +1,42 @@
-section{
+section {
     width: 100vw;
-    min-height:100%; 
+    min-height: 100%;
     overflow: visible;
     position: relative;
 }
 
-.section hgroup{
- display: flex;
- flex-direction: column;
- justify-content: flex-start;
- align-items: flex-start;
- z-index: 100;
- margin-top: 3rem;
- 
+.section hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 100;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+
 }
-.section h1{
+
+.section h1 {
     font-size: calc(1rem + 3vw);
     line-height: 1.2;
     font-weight: bold;
     color: white;
 }
-.section p{
+
+.section p {
     text-align: left;
 }
-.sectionFlexcontiner{
-display:flex;
-flex-direction: row;
-z-index: 100;
-margin-top: 7vh;
-width: 100vw;
-height: fit-content;
-gap:15px;
-overflow-x: hidden;
-overflow-y: visible;
+
+.sectionFlexcontiner {
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    margin-top: 7vh;
+    width: 100vw;
+    height: fit-content;
+    gap: 15px;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 
@@ -43,69 +47,75 @@ overflow-y: visible;
 
 @media screen and (max-width: 1100px) {
     .sectionFlexcontiner {
-      flex-wrap: nowrap;
-      overflow-x:scroll; 
-      padding: 10px;
-      position: relative;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 10px;
+        position: relative;
     }
-    
-    
-/* WebKit browsers (Chrome, Safari) */
-.sectionFlexcontiner::-webkit-scrollbar {
-    height: 5px; /* Height of the scrollbar */
-}
-
-.sectionFlexcontiner::-webkit-scrollbar-track {
-    background: white; /* Background of the scrollbar track */
-}
-
-/* Style of the scrollbar thumb */
-.sectionFlexcontiner::-webkit-scrollbar-thumb {
-    background: rgb(28, 124, 214); /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners for the thumb */
-    height: 6px; /* Height of the thumb */
-    width: 20vw; /* Width of the thumb */
-    position: absolute;
-    bottom: 0; /* Position at the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust positioning to be centered */
-}
-
-/* Optional: Add hover effect for the thumb */
-.sectionFlexcontiner::-webkit-scrollbar-thumb:hover {
-    background: rgb(156, 46, 129); /* Color of the scrollbar thumb on hover */
-}
-
-/* Apply cursor only to scrollbar area */
-.sectionFlexcontiner::-webkit-scrollbar-thumb {
-    cursor: grab; /* Cursor when not dragging */
-}
-.sectionFlexcontiner .scrollbar-overlay {
-    cursor: grab; /* Cursor when not dragging */
-}
-
-/* Change cursor to grabbing when dragging */
-.sectionFlexcontiner::-webkit-scrollbar-thumb:active {
-    cursor: grabbing; /* Cursor when actively dragging */
-}
-  }
 
 
-  @media screen and ( min-width: 1700px ){
-    .section h1{
+    /* WebKit browsers (Chrome, Safari) */
+    .sectionFlexcontiner::-webkit-scrollbar {
+        height: 5px;
+        /* Height of the scrollbar */
+    }
+
+    .sectionFlexcontiner::-webkit-scrollbar-track {
+        background: white;
+        /* Background of the scrollbar track */
+    }
+
+    /* Style of the scrollbar thumb */
+    .sectionFlexcontiner::-webkit-scrollbar-thumb {
+        background: rgb(28, 124, 214);
+        /* Color of the scrollbar thumb */
+        border-radius: 10px;
+        /* Rounded corners for the thumb */
+        height: 6px;
+        /* Height of the thumb */
+        width: 20vw;
+        /* Width of the thumb */
+        position: absolute;
+        bottom: 0;
+        /* Position at the bottom */
+        left: 50%;
+        /* Center horizontally */
+        transform: translateX(-50%);
+        /* Adjust positioning to be centered */
+    }
+
+    /* Optional: Add hover effect for the thumb */
+    .sectionFlexcontiner::-webkit-scrollbar-thumb:hover {
+        background: rgb(156, 46, 129);
+        /* Color of the scrollbar thumb on hover */
+    }
+
+    /* Apply cursor only to scrollbar area */
+    .sectionFlexcontiner::-webkit-scrollbar-thumb {
+        cursor: grab;
+        /* Cursor when not dragging */
+    }
+
+    .sectionFlexcontiner .scrollbar-overlay {
+        cursor: grab;
+        /* Cursor when not dragging */
+    }
+
+    /* Change cursor to grabbing when dragging */
+    .sectionFlexcontiner::-webkit-scrollbar-thumb:active {
+        cursor: grabbing;
+        /* Cursor when actively dragging */
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .section h1 {
         font-size: calc(1rem + 1vw);
     }
-    .sectionFlexcontiner{
+
+    .sectionFlexcontiner {
         margin-top: 2vh;
-        }
-  
-  }
+    }
 
-
-
-
-
-
-
-
-
+}

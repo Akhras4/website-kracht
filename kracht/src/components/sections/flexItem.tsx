@@ -1,5 +1,6 @@
 import React from "react";
 import './flexitem.css'
+import { Link } from "react-router-dom";
 
 interface FlexItemProps{
     imageSrc: string;
@@ -9,6 +10,7 @@ interface FlexItemProps{
     sort:string;
     number:number;
     numberAndSort:string;
+    link:string
 
 }
 
@@ -20,6 +22,7 @@ const FlexItem:React.FC<FlexItemProps>=({
     sort,
     number,
     numberAndSort,
+    link
 })=>{
     return (
         <>
@@ -28,6 +31,7 @@ const FlexItem:React.FC<FlexItemProps>=({
             <div className="flexitemtext">
                 <div className="flex"><h2 style={{color:numberAndSort,marginRight:'8px'}}>0{number}.</h2><h2>{Heading}</h2></div>
                 <p className="paragraph-text">{Paragraph}</p>
+                <Link to={link} >
                 <button className="sort" style={{color:numberAndSort}}>
                 {sort}
                     <svg width="30px" height="8px" viewBox="0 0 30 8" version="1.1" xmlns="http://www.w3.org/2000/svg" >
@@ -39,6 +43,7 @@ const FlexItem:React.FC<FlexItemProps>=({
                         </g>
                     </svg>
                 </button>
+                </Link>
             </div>
         </div>
         </>

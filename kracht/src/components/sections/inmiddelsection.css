@@ -1,0 +1,55 @@
+.Inmiddelsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 1400px;
+    height: fit-content;
+    margin: 5rem 0rem 5rem 0;
+
+}
+
+.Inmiddelsection .container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    gap: 2rem;
+    text-align: left;
+
+}
+
+.Inmiddelsection .tittlePargraph {
+    color: #0993c5;
+    font-weight: 500;
+}
+
+.Inmiddelsection h1 {
+    font-size: calc(1rem + 2vw);
+    line-height: 1.2;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    .Inmiddelsection {
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 0.5rem;
+    }
+
+    .Inmiddelsection .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+
+    .Inmiddelsection {
+        margin: 0 auto;
+    }
+
+    .Inmiddelsection h1 {
+        font-size: calc(1rem + 1vw);
+    }
+}
