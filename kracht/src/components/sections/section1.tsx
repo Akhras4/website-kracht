@@ -3,17 +3,13 @@ import './section.css'
 import Imgmotionbg from "../imgmotionbg/imgmotionbg";
 
 interface sectionProps{
-    titelSection1:string;
-    titelSection2:string;
-    titelSection3:string;
+    titelSection:React.ReactNode []
     titelDisc:string;
     children?: React.ReactNode;
 }
 
 const Section1:React.FC<sectionProps>=({
-    titelSection1,
-    titelSection2,
-    titelSection3,
+    titelSection,
     titelDisc,
     children,
 })=>{
@@ -22,20 +18,10 @@ const Section1:React.FC<sectionProps>=({
         <section className="section">
         <Imgmotionbg />
         <hgroup>
-           <h1>
-           {titelSection1}
-           </h1>
-           {titelSection2 &&
-            <h1>
-           {titelSection2}
-           </h1>
-           }
-           {titelSection3 &&
-            <h1>
-           {titelSection3}
-           </h1>
-           }
-           {titelDisc ? <p>{titelDisc}</p> : null }
+           {titelSection && titelSection.map((item,index)=>(
+           item && <h1 key={index}>{item}</h1>
+           ))}
+           {titelDisc ? <p className="mt-5">{titelDisc}</p> : null }
         </hgroup>
             <div className="sectionFlexcontiner">
             {children}
