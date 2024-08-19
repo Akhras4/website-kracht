@@ -90,7 +90,7 @@ function Home() {
        sort='Demand & lead generation'
        number={2}
        numberAndSort='#535bf2'
-       link='/thema/digitale-transformatie/'
+       link='/thema/demand-leadgeneration'
       /> 
       <FlexItem 
       imageSrc={ecommerce}
@@ -101,7 +101,7 @@ function Home() {
        sort='E-commerce'
        number={3}
        numberAndSort='#535bf2'
-       link='/thema/digitale-transformatie/'
+       link='/thema/e-commerce'
       /> 
       <FlexItem 
       imageSrc={reccruitment}
@@ -113,7 +113,7 @@ function Home() {
        sort='Recruitment marketing'
        number={4}
        numberAndSort='#535bf2'
-       link='/thema/digitale-transformatie'
+       link='/thema/recruitment'
       /> 
       </Section1>
       
@@ -121,15 +121,17 @@ function Home() {
       <Section2 
       titlePargraf=""
       title='Voor elk vraagstuk een oplossing'
-      description1='Ben jij klaar voor de volgende stap met jouw bedrijf? Klaar voor meer werknemers, sales, klanten? Laten we samenwerken aan je vraagstuk.'
-      description2='Al tijdens onze eerste gesprekken brengen we samen jouw doelen helder in kaart en werken we een doordachte strategie uit. Met de plannen die daaruit volgen brengen we die stip op je horizon binnen handbereik.'
-      description3='Terwijl jij focust op dat waar jij goed in bent, combineren wij design, development, copy, data, foto- en videografie tot de beste mix voor jou.'
-      description4='Die combinatie en de route zijn elke keer anders. Onze werkwijze niet.'
+      description={['Ben jij klaar voor de volgende stap met jouw bedrijf? Klaar voor meer werknemers, sales, klanten? Laten we samenwerken aan je vraagstuk.'
+      ,'Al tijdens onze eerste gesprekken brengen we samen jouw doelen helder in kaart en werken we een doordachte strategie uit. Met de plannen die daaruit volgen brengen we die stip op je horizon binnen handbereik.'
+      ,'Terwijl jij focust op dat waar jij goed in bent, combineren wij design, development, copy, data, foto- en videografie tot de beste mix voor jou.'
+      ,'Die combinatie en de route zijn elke keer anders. Onze werkwijze niet.'
+      ]}
       link=''
       text='dit is onze werkwijze'
       direction='row'
       imgSrc = {kantoor1}
       imgAlt='kantoor1'
+      displayType= 'pargraph'
        />
 
 <Section1
@@ -194,15 +196,17 @@ function Home() {
       <Section2 
       titlePargraf=""
       title='Voor elk vraagstuk een oplossing'
-      description1='Ben jij klaar voor de volgende stap met jouw bedrijf? Klaar voor meer werknemers, sales, klanten? Laten we samenwerken aan je vraagstuk.'
-      description2='Al tijdens onze eerste gesprekken brengen we samen jouw doelen helder in kaart en werken we een doordachte strategie uit. Met de plannen die daaruit volgen brengen we die stip op je horizon binnen handbereik.'
-      description3='Terwijl jij focust op dat waar jij goed in bent, combineren wij design, development, copy, data, foto- en videografie tot de beste mix voor jou.'
-      description4='Die combinatie en de route zijn elke keer anders. Onze werkwijze niet.'
+      description={['Ben jij klaar voor de volgende stap met jouw bedrijf? Klaar voor meer werknemers, sales, klanten? Laten we samenwerken aan je vraagstuk.'
+      ,'Al tijdens onze eerste gesprekken brengen we samen jouw doelen helder in kaart en werken we een doordachte strategie uit. Met de plannen die daaruit volgen brengen we die stip op je horizon binnen handbereik.'
+      ,'Terwijl jij focust op dat waar jij goed in bent, combineren wij design, development, copy, data, foto- en videografie tot de beste mix voor jou.'
+      ,'Die combinatie en de route zijn elke keer anders. Onze werkwijze niet.'
+    ]}
       link=''
       text='dit is onze werkwijze'
       direction='row-reverse'
       imgSrc = {kantoor2}
       imgAlt='kantoor1'
+      displayType= 'pargraph'
        />
      <Emailms />
      <Footer />

@@ -3,6 +3,7 @@
     height: fit-content;
     overflow: visible;
     position: relative;
+    max-width: 100vw;
 
 }
 
@@ -37,18 +38,13 @@ button.cursorPlus span:nth-child(2) {
 }
 
 main h1 {
-    font-size: calc(2rem + 6vw);
+    font-size: calc(2rem + 5vw);
     font-weight: bold;
     line-height: 1.1;
 
 }
 
-main p {
-    font-size: calc(1rem + 0.5vw);
-    text-align: start;
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     #main {
         height: fit-content;
         display: flex;
@@ -144,7 +140,7 @@ main p {
 @media screen and (min-width: 1900px) {
     #main {
         width: 1400px;
-        
+        max-height: 1000px;
     }
 
 }

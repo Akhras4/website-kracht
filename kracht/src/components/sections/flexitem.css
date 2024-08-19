@@ -1,4 +1,3 @@
-
 .flexitemtext .paragraph-text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -7,31 +6,33 @@
     -webkit-box-orient: vertical;
     line-height: 1.5;
 }
-.flexitemtext{
-    display:flex;
+
+.flexitemtext {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap:20px;
+    gap: 20px;
     width: 100%;
 }
-#flexitem{
-    display:flex;
+
+#flexitem {
+    display: flex;
     align-items: flex-start;
-    flex-direction:column;
-    min-width: 290px ;
-    width:290px ;
-    color:white;
-    gap:20px;
+    flex-direction: column;
+    min-width: 290px;
+    width: 290px;
+    color: white;
+    gap: 20px;
     box-sizing: border-box;
     margin-bottom: 3rem;
 }
-#flexitem .sort{
+
+#flexitem .sort {
     display: flex;
     width: 100%;
     align-items: center;
     gap: 1.5rem;
-    font-size: 1rem;
     line-height: 1.5;
     text-align: left;
     transition: all 0.3s ease-in-out;
@@ -39,11 +40,11 @@
 }
 
 #flexitem .sort:hover {
-        gap: 1rem; 
-        cursor: pointer;
-    }
+    gap: 1rem;
+    cursor: pointer;
+}
 
-    #flexitem svg{
-width: 30px;
-height: 8px;
-    }
+#flexitem svg {
+    width: 30px;
+    height: 8px;
+}

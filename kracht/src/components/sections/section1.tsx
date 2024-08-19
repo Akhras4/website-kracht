@@ -25,13 +25,17 @@ const Section1:React.FC<sectionProps>=({
            <h1>
            {titelSection1}
            </h1>
-           <h1>
+           {titelSection2 &&
+            <h1>
            {titelSection2}
            </h1>
-           <h1>
+           }
+           {titelSection3 &&
+            <h1>
            {titelSection3}
            </h1>
-           {titelDisc ? <p>titelDisc</p> : null }
+           }
+           {titelDisc ? <p>{titelDisc}</p> : null }
         </hgroup>
             <div className="sectionFlexcontiner">
             {children}

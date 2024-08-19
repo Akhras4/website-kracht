@@ -31,17 +31,10 @@
     filter: grayscale(0);
   
 }
-
-
-  
-
-  
-
-  
   @media (max-width: 767px) {
     .logo-item {
         width: 40vw;
-        height: 33vh;
+        height: 20vh;
     }
        
   }
@@ -54,7 +47,7 @@
     .logo-item {
 
       width: 30%;
-      height: 300px;
+      height: 250px;
 
   
     }

@@ -1,38 +1,44 @@
-/* .imgbgcon{
-    position: absolute;  
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: -11;
-    pointer-events: none;
-    opacity: 0.7;
-  
+.imgbgcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -11;
+  pointer-events: none;
+  opacity: 0.7;
+
+
+}
+
+.imgbgcon .pinkimgbg {
+
+  top: 0;
+  left: 0;
+  position: absolute;
+  ;
+
+}
+
+.imgbgcon .blueimgbg {
+  position: absolute;
+  top: 20vh;
+  left: 30vh;
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .imgbgcon {
+
+    width: 700px;
+    height: 700px;
+    opacity: 1;
   }
-  .imgbgcon .pinkimgbg{
 
-    top:0;
-    left: 0;
-    position:absolute;;
+  .imgbgcon .bluebgimg {
+    top: 20vh;
+    left: 30vh;
 
   }
-  .imgbgcon .blueimgbg{
-    position: absolute;
-    top:10vh;
-    left:20vh;
-
-
-    }
-    @media screen and (max-width: 800px) {
-      .imgbgcon{
-
-        width: 700px;
-        height: 700px;
-        opacity: 1;
-      }
-      .imgbgcon .bluebgimg{
-        top:20vh;
-        left:30vh;
-    
-        }
-    } */
+}
