@@ -10,9 +10,10 @@ import Footer from './components/footer/footer.tsx';
 import Emailms from './components/emailms/eamilms.tsx';
 import Header from './components/header/header.tsx';
 import Mobilenavbar from './components/header/Mobilenavbar.tsx';
-
-
-
+import Digitalbusinessstrategy from './pages/diensten/digitalbusinessstrategy.tsx';
+import Digitalmarketing from './pages/diensten/digitalmarketing.tsx';
+import Socialcontent from './pages/diensten/socialcontent.tsx'
+import Designentechnology from './pages/diensten/designentechnology.tsx'
 function App() {
     return (
         <div className='App'>
@@ -25,6 +26,10 @@ function App() {
                     <Route path='/thema/e-commerce' element={<Ecommerce />} />
                     <Route path='/thema/demand-leadgeneration' element={<DemandAndLeadGeneration />} />
                     <Route path='/thema/recruitment' element={<Recruitment />} />
+                    <Route path='/diensten/digital-business-strategy' element={<Digitalbusinessstrategy />} />
+                    <Route path='/diensten/digital-marketing/' element={<Digitalmarketing />} />
+                    <Route path='/diensten/design-en-technology/' element={<Designentechnology />} />
+                    <Route path='/diensten/social-content/' element={<Socialcontent />} />
                     <Route path="*" element={<Nopage />} />
                 </Routes>
             </BrowserRouter>

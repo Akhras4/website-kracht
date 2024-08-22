@@ -85,7 +85,7 @@ const HomeData = {
       sort: 'Digital business strategy',
       number: 1,
       numberAndSort: '#535bf2',
-      link: '/thema/digitale-transformatie/'
+      link: '/diensten/digital-business-strategy'
     },
     {
       imageSrc: barnd2,
@@ -96,7 +96,7 @@ const HomeData = {
       sort: 'Digital marketing',
       number: 2,
       numberAndSort: '#535bf2',
-      link: '/thema/digitale-transformatie/'
+      link: '/diensten/digital-marketing/'
     },
     {
       imageSrc: barnd3,
@@ -108,7 +108,7 @@ const HomeData = {
       sort: 'design en technology',
       number: 3,
       numberAndSort: '#535bf2',
-      link: '/thema/digitale-transformatie/'
+      link: '/diensten/design-en-technology/'
     },
     {
       imageSrc: barnd4,
@@ -120,7 +120,7 @@ const HomeData = {
       sort: 'Social content',
       number: 4,
       numberAndSort: '#535bf2',
-      link: '/thema/digitale-transformatie/'
+      link: '/diensten/social-content/'
     }
   ],
 
