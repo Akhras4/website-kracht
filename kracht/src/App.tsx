@@ -14,6 +14,7 @@ import Digitalbusinessstrategy from './pages/diensten/digitalbusinessstrategy.ts
 import Digitalmarketing from './pages/diensten/digitalmarketing.tsx';
 import Socialcontent from './pages/diensten/socialcontent.tsx'
 import Designentechnology from './pages/diensten/designentechnology.tsx'
+import Overons from './pages/overons/overons.tsx';
 function App() {
     return (
         <div className='App'>
@@ -30,6 +31,7 @@ function App() {
                     <Route path='/diensten/digital-marketing/' element={<Digitalmarketing />} />
                     <Route path='/diensten/design-en-technology/' element={<Designentechnology />} />
                     <Route path='/diensten/social-content/' element={<Socialcontent />} />
+                    <Route path='/over-ons/' element={<Overons/>} />
                     <Route path="*" element={<Nopage />} />
                 </Routes>
             </BrowserRouter>
