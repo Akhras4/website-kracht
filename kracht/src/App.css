@@ -70,7 +70,22 @@ ul li::before {
   list-style-position: outside;
 
 }
+h2{
+  font-size: calc(0.4rem + 1vw);
+    line-height: 1.2;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+}
+p{
+  text-align: left;
+  font-weight: 400;
+  font-family:sans-serif;
+  letter-spacing: 0.04px;
+  line-height: 1.2;
+  font-size: calc(0.6rem + 0.6vw);
 
+}
 
 
 
