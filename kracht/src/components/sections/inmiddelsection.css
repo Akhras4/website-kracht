@@ -46,7 +46,8 @@
 @media screen and (min-width: 1700px) {
 
     .Inmiddelsection {
-        margin: 0 auto;
+  width: 100vw;
+  height: fit-content;
     }
 
     .Inmiddelsection h1 {

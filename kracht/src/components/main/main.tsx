@@ -42,7 +42,9 @@ const Main: React.FC<MainProps> = ({
         <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515 ">
           <h1 className="text-white leading-h1  ">
             {title}
+            {title1 ?
             <span className="text-home-hero-h1 leading-h1 fluid ml-5">{  title1}</span>
+              : null}
             <br />
             {  title2 ? title2 :null}
             <br />

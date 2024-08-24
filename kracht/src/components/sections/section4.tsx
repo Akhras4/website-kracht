@@ -10,6 +10,7 @@ interface Item {
 interface section4Props {
     imgScr: string[],
     imgAlt: string,
+    time:number,
     items: {
         item: Item;
         item1: Item;
@@ -21,6 +22,7 @@ interface section4Props {
 const Section4: React.FC<section4Props> = ({
     imgScr,
     imgAlt,
+    time,
     items
 }) => {
     const [imgSlider, setImgSlider] = useState<string>(imgScr[0])
@@ -29,7 +31,7 @@ const Section4: React.FC<section4Props> = ({
     useEffect(() => {
         setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex != imgScr.length - 1 ? prevIndex + 1 : 0));
-        }, 10000)
+        }, time)
     }, [imgScr.length])
     useEffect(() => {
         setImgSlider(imgScr[currentIndex]);
