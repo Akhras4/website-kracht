@@ -26,11 +26,15 @@ const FlexItem:React.FC<FlexItemProps>=({
 })=>{
     return (
         <>
-        <div id ="flexitem">
+        <div id ="flexitem" >
             <img src={imageSrc} alt={imageAlt} style={{width:'100%', height:'80%',borderRadius:'20px'}} />
             <div className="flexitemtext">
-                <div className="flex"><h2 style={{color:numberAndSort,marginRight:'8px'}}>0{number}.</h2><h2>{Heading}</h2></div>
-                <p className="paragraph-text">{Paragraph}</p>
+                <div className="flex">
+                    {number ?<h2 style={{color:numberAndSort,marginRight:'8px'}}>0{number}.</h2>:null}
+                    {number ? <h2>{Heading}</h2>:<h2 style={{fontSize:'20px',color:numberAndSort}}>{Heading}</h2>}
+                </div>
+                {number ?<p className="paragraph-text">{Paragraph}</p>:<h2 style={{fontSize:'35px', marginTop:'-10px'}}>{Paragraph}</h2>}
+                {link ?
                 <Link to={link} >
                 <button className="sort" style={{color:numberAndSort}}>
                 {sort}
@@ -44,6 +48,7 @@ const FlexItem:React.FC<FlexItemProps>=({
                     </svg>
                 </button>
                 </Link>
+                :null}
             </div>
         </div>
         </>

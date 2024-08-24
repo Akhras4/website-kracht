@@ -4,11 +4,19 @@ import './inmiddelsection.css'
 import Imgbg from "../imgbg/imgbg";
 import Unorderlist from "./unorderlist";
 
+export interface CustomStyles {
+    pStyle?: React.CSSProperties;
+    container?:React.CSSProperties
+    tittlePargraph?:React.CSSProperties
+
+}
+
 interface InmiddelsectionProps {
     tittlePargraph: string;
     title: string;
     subtitle: React.ReactNode [];
-    displayType: 'list' | 'pargraph'
+    displayType: 'list' | 'pargraph',
+    customStyles?: CustomStyles;
 
 
 }
@@ -19,18 +27,21 @@ const Inmiddelsection: React.FC<InmiddelsectionProps> = ({
     title,
     subtitle,
     displayType,
+    customStyles = {},
 
 }) => {
     return (
-        <section className="Inmiddelsection">
+        <section className="Inmiddelsection" >
             <Imgbg />
-            <div className="container">
-                {tittlePargraph ? <p className="tittlePargraph">{tittlePargraph}</p> : null}
+            <div className="container" style={{...customStyles.container}}>
+                <div>
+                {tittlePargraph ? <p style={customStyles.tittlePargraph } className="tittlePargraph">{tittlePargraph}</p> : null}
                 <h1>{title}</h1>
+                </div>
                 {displayType === 'pargraph' ? (
                     <>
                       {subtitle.map((item,index)=>(
-                        <p key={index}>{item}</p>
+                        <p style={customStyles.pStyle } key={index}>{item}</p>
                       ))}
                     </>
                 ) : (

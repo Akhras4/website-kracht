@@ -19,6 +19,7 @@ a:hover {
 body{
     background-color: rgb(12, 27, 36);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 

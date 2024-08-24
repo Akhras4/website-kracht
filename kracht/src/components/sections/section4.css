@@ -1,5 +1,10 @@
 .section4{
-    margin-bottom: 50vh;
+    margin-bottom: 4rem;
+   max-width: 1400px;
+   height: 100vh;
+   max-height: 1000px;
+   overflow: hidden;
+    
 }
 
 .section4 .container{
@@ -38,6 +43,7 @@
 }
 .item2{
     grid-area: item2;
+    margin-right: 3rem;
 }
 .itemcontainer{
     display: flex;
@@ -55,8 +61,6 @@
 @media screen and (min-width: 1700px) {
     .section4{
         width: 1400px;
-        max-height: 1000px;
-        height: 90%;
         margin: 0 auto;
     }
 }

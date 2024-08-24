@@ -17,12 +17,14 @@ const Section1:React.FC<sectionProps>=({
         <>
         <section className="section">
         <Imgmotionbg />
+        {titelDisc? 
         <hgroup>
            {titelSection && titelSection.map((item,index)=>(
            item && <h1 key={index}>{item}</h1>
            ))}
            {titelDisc ? <p className="mt-5">{titelDisc}</p> : null }
         </hgroup>
+        :null}
             <div className="sectionFlexcontiner">
             {children}
             </div>   
