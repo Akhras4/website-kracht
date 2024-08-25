@@ -1,10 +1,8 @@
 import React from "react";
 import overonsData from "../../const/overons";
 import Section4 from "../../components/sections/section4";
-import Section2 from '../../components/sections/section2'
 import Main from '../../components/main/main';
 import Inmiddelsection from "../../components/sections/inmiddelsection";
-import socialcontentData from '../../const/socialcontentData'
 import Imgmotionbg from "../../components/imgmotionbg/imgmotionbg";
 import Section1 from "../../components/sections/section1";
 import FlexItem from "../../components/sections/flexItem";
@@ -13,6 +11,7 @@ const customStyles: CustomStyles = {
         container: {
                 flexDirection: 'row',
                 textAlign: 'end',
+                
         },
         pStyle: {
                 alignSelf: 'center', 

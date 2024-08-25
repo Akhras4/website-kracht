@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Children } from 'react'
 import TextButton from '../TextButton/TextButton';
 import './section2.css'
 import Unorderlist from './unorderlist';
 import Imgbg from '../imgbg/imgbg';
+import Buttons from '../buttons/buttons';
 
 
 interface section2Props {
@@ -15,6 +16,12 @@ interface section2Props {
     text: string;
     link: string;
     displayType: 'list' | 'pargraph'
+    children?:React.ReactNode;
+    forwardSection?: () => void;
+  backwardSection?: () => void;
+  activeSection?:number;
+  childrenCount?:number
+    
 }
 
 const section2: React.FC<section2Props> = ({
@@ -27,6 +34,11 @@ const section2: React.FC<section2Props> = ({
     text,
     titlePargraf,
     displayType,
+    children,
+    forwardSection,
+    backwardSection,
+    activeSection,
+    childrenCount
 
 }) => {
 
@@ -56,12 +68,25 @@ const section2: React.FC<section2Props> = ({
                     </div>
                     <div className='part1'>
                         <img src={imgSrc} alt={imgAlt} />
+                        {children}
+                        {forwardSection && backwardSection && (
+                            <>
+                            <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
+                            <div className='flex gap-3 absolute -top-40px right-4'>
+                            <p id='titlePargraf'>Topinitiatieven</p><p className='font-semibold'> {activeSection}/{childrenCount} </p>
+                            </div>
+                            </>
+                        )}
                     </div>
                 </>
             ) : (
                 <>
                     <div className='part1'>
                         <img src={imgSrc} alt={imgAlt} />
+                        {children}
+                        {forwardSection && backwardSection && (
+                            <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
+                        )}
                     </div>
                     <div className='part2'>
                         <div className='continer'>

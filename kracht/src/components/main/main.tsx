@@ -42,10 +42,10 @@ const Main: React.FC<MainProps> = ({
         <div id="titel" className="relative visibleContent animate-title pointer-events-auto z-515 ">
           <h1 className="text-white leading-h1  ">
             {title}
+            <br />
             {title1 ?
             <span className="text-home-hero-h1 leading-h1 fluid ml-5">{  title1}</span>
               : null}
-            <br />
             {  title2 ? title2 :null}
             <br />
             {  title2 ? title3 :null}
@@ -56,10 +56,11 @@ const Main: React.FC<MainProps> = ({
             <p dir="ltr">{description}</p>
           </div>
         </div>
-        <TextButton
+        {buttonText ? <TextButton
           text={buttonText}
           link={buttonLink}
         />
+        :null} 
       </motion.div>
       <motion.div id="right"
        initial={{ y: '150px' }}
