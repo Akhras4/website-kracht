@@ -82,8 +82,8 @@ p{
   font-weight: 400;
   font-family:sans-serif;
   letter-spacing: 0.04px;
-  line-height: 1.2;
-  font-size: calc(0.6rem + 0.6vw);
+  line-height: 1.4;
+  font-size: calc(1rem + 0.5vh );
 
 }
 
@@ -93,6 +93,22 @@ p{
   #root {
     margin: 0.5rem;
     padding: 0;
+  }
+  h2{
+    font-size: calc(0.8rem );
+      line-height: 1.2;
+      font-weight: 500;
+      color: white;
+      text-align: left;
+  }
+  p{
+    text-align: left;
+    font-weight: 400;
+    font-family:sans-serif;
+    letter-spacing: 0.04px;
+    line-height: 1.2;
+    font-size: calc(0.6rem + 1vw );
+  
   }
 }
 

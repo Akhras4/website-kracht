@@ -13,7 +13,6 @@
     width: 70vw;
     max-width: 950px;
     min-height: 90vh;
-    margin-top: 4rem;
     margin-right: -1rem;
 }
 
@@ -38,7 +37,8 @@ button.cursorPlus span:nth-child(2) {
 }
 
 main h1 {
-     font-size: calc(2rem + 4vw);
+    margin-top: 6rem;
+     font-size: calc(3rem + 2vw);
     font-weight: bold;
     line-height: 1.1;
 

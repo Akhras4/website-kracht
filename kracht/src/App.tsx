@@ -15,6 +15,7 @@ import Digitalmarketing from './pages/diensten/digitalmarketing.tsx';
 import Socialcontent from './pages/diensten/socialcontent.tsx'
 import Designentechnology from './pages/diensten/designentechnology.tsx'
 import Overons from './pages/overons/overons.tsx';
+import Duurzaamondernemen from './pages/overons/duurzaamondernemen.tsx';
 function App() {
     return (
         <div className='App'>
@@ -32,6 +33,7 @@ function App() {
                     <Route path='/diensten/design-en-technology/' element={<Designentechnology />} />
                     <Route path='/diensten/social-content/' element={<Socialcontent />} />
                     <Route path='/over-ons/' element={<Overons/>} />
+                    <Route path='/over-ons/duurzaam-ondernemen/' element={<Duurzaamondernemen />} />
                     <Route path="*" element={<Nopage />} />
                 </Routes>
             </BrowserRouter>
