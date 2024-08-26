@@ -15,8 +15,8 @@ const HomeData = {
   main: {
     imageSrc: "https://d30yna6yll9wpi.cloudfront.net/niice/Brandshoot-2024/_1000x1000_crop_center-center_100_none/Niice-brandshoot-87.jpeg",
     imageAlt: "kract brandshoot 87",
-    title: "discover",
-    title1: "your",
+    title: "discover your",
+    title1: "",
     title2: "digital",
     title3: "happiness",
     description: "Kwalitatieve leads genereren, je producten online aan de man brengen, succesvol medewerkers aantrekken, bedrijfsprocessen optimaliseren of je online aanwezigheid nog sterker, beter maken? Wat je doel ook is, wij hebben de kennis, de ervaring en het team om jou vooruit te helpen.",
