@@ -38,9 +38,10 @@ button.cursorPlus span:nth-child(2) {
 
 main h1 {
     margin-top: 6rem;
-     font-size: calc(3rem + 2vw);
+     font-size: calc(4rem + 2vw);
     font-weight: bold;
     line-height: 1.1;
+    white-space: nowrap;
 
 }
 

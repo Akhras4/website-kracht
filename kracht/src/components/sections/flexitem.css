@@ -28,15 +28,21 @@
     margin-bottom: 3rem;
 }
 
+
 #flexitem .sort {
     display: flex;
     width: 100%;
     align-items: center;
+    font-weight: 550;
+    font-size: 1.05rem;
     gap: 1.5rem;
     line-height: 1.5;
     text-align: left;
     transition: all 0.3s ease-in-out;
     transition-timing-function: ease-in-out;
+}
+#flexitem h2 {
+    font-size: 1.05rem;
 }
 
 #flexitem .sort:hover {

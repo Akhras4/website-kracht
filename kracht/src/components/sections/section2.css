@@ -9,12 +9,10 @@
     overflow: visible;
 }
 
-/* Styles for paragraph elements within the section */
 .description-paragraph {
     margin-top: 1.2rem;
 }
 
-/* Styles for the first part of the section */
 .section2 .part1 {
     width: 45%;
     height: 100%;
@@ -28,7 +26,6 @@
     margin-right: 3rem;
 }
 
-/* Styles for the second part of the section */
 .section2 .part2 {
     align-self: center;
     width: 45%;
@@ -46,7 +43,7 @@
 
 .section2 p#titlePargraf {
     color: #0993c5;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .section2 .part2 h1 {
@@ -136,5 +133,6 @@
 
     .section2 .part2 h1 {
         font-size: calc(1rem + 1vw);
+
     }
 }
