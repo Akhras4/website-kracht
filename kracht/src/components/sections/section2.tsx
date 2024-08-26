@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 import TextButton from '../TextButton/TextButton';
 import './section2.css'
 import Unorderlist from './unorderlist';
@@ -16,12 +16,12 @@ interface section2Props {
     text: string;
     link: string;
     displayType: 'list' | 'pargraph'
-    children?:React.ReactNode;
+    children?: React.ReactNode;
     forwardSection?: () => void;
-  backwardSection?: () => void;
-  activeSection?:number;
-  childrenCount?:number
-    
+    backwardSection?: () => void;
+    activeSection?: number;
+    childrenCount?: number
+
 }
 
 const section2: React.FC<section2Props> = ({
@@ -50,7 +50,7 @@ const section2: React.FC<section2Props> = ({
                     <div className='part2'>
                         <div className='continer'>
                             {titlePargraf ? <p id='titlePargraf'>{titlePargraf}</p> : null}
-                            <h1>{title}</h1>
+                            {title ?<h1>{title}</h1> :null}
                             {displayType === 'pargraph' ? (
                                 <>
                                     {description.map((item, index) => (
@@ -64,17 +64,18 @@ const section2: React.FC<section2Props> = ({
                             )}
 
                         </div>
-                        <TextButton text={text} link={link} />
+                        {text  ? <TextButton text={text} link={link} /> :null}
+     
                     </div>
                     <div className='part1'>
                         <img src={imgSrc} alt={imgAlt} />
                         {children}
                         {forwardSection && backwardSection && (
                             <>
-                            <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
-                            <div className='flex gap-3 absolute -top-40px right-4'>
-                            <p id='titlePargraf'>Topinitiatieven</p><p className='font-semibold'> {activeSection}/{childrenCount} </p>
-                            </div>
+                                <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
+                                <div className='flex gap-3 absolute -top-40px right-4'>
+                                    <p id='titlePargraf'>Topinitiatieven</p><p className='font-semibold'> {activeSection}/{childrenCount} </p>
+                                </div>
                             </>
                         )}
                     </div>
@@ -85,7 +86,12 @@ const section2: React.FC<section2Props> = ({
                         <img src={imgSrc} alt={imgAlt} />
                         {children}
                         {forwardSection && backwardSection && (
-                            <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
+                            <>
+                                <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
+                                <div className='flex gap-3 absolute -top-40px right-4'>
+                                    <p id='titlePargraf'>Topinitiatieven</p><p className='font-semibold'> {activeSection}/{childrenCount} </p>
+                                </div>
+                            </>
                         )}
                     </div>
                     <div className='part2'>

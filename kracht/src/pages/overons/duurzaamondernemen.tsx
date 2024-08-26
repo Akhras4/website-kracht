@@ -6,7 +6,8 @@ import duurzaamondernemenData from '../../const/duurzaamondernemenData'
 import { CustomStyles } from '../../components/sections/inmiddelsection'
 import Slider from "../../components/slider/slider"
 import Buttons from "../../components/buttons/buttons"
-import HomeData from "../../const/homeData"
+
+
 const customStyles: CustomStyles = {
     container: {
             flexDirection: 'column',
@@ -35,10 +36,16 @@ const Duurzaamondernemen: React.FC =()=>{
          customStyles={customStyles} 
          />
          <Slider >
-         <Section2 {...HomeData.section2} direction="row-reverse" displayType="pargraph">
+         <Section2 {...duurzaamondernemenData.section2_1} direction="row-reverse" displayType="pargraph">
          <Buttons forwardSection={() => {}} backwardSection={() => {}} />
             </Section2>
-            <Section2 {...HomeData.section2_1} direction="row-reverse" displayType="pargraph">
+            <Section2 {...duurzaamondernemenData.section2_2} direction="row-reverse" displayType="pargraph">
+            <Buttons forwardSection={() => {}} backwardSection={() => {}} />
+              </Section2>
+              <Section2 {...duurzaamondernemenData.section2_3} direction="row-reverse" displayType="pargraph">
+            <Buttons forwardSection={() => {}} backwardSection={() => {}} />
+              </Section2>
+              <Section2 {...duurzaamondernemenData.section2_4} direction="row-reverse" displayType="pargraph">
             <Buttons forwardSection={() => {}} backwardSection={() => {}} />
               </Section2>
        </Slider>

@@ -1,6 +1,7 @@
 import React, { useState, ReactNode, ReactElement , isValidElement } from 'react';
 import { motion } from 'framer-motion';
 
+
 type Direction = 1 | -1;
 
 interface SliderProps {
@@ -52,8 +53,7 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
               x: { type: 'spring', stiffness: 50 },
               opacity: { duration: 2 },
             }}
-            style={{
-            }}
+           
           >
             {isValidElement(child)
               ? React.cloneElement(child as ReactElement<any>, { forwardSection, backwardSection,activeSection:activeSection+1,childrenCount: childrenArray.length })
