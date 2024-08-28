@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
           </svg>
         </a>
 
-         <div className="pt-6 absolute top-full -right-96 min-w-[85vw] h-full pointer-events-none group-hover:pointer-events-auto">
+         <div className="pt-6 absolute top-full -right-96 w-[85vw] max-w-[1100px] h-full pointer-events-none group-hover:pointer-events-auto">
           <div
             
             className="bg-[#0c1b24] p-5 bg-dark rounded-[20px] -translate-y-[15%] opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-200 ease-out flex flex-row items-start justify-start z-0"

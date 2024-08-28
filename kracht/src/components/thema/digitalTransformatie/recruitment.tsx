@@ -1,6 +1,5 @@
 import React from "react"
 import Main from "../../main/main";
-import Imgmotionbg from "../../imgmotionbg/imgmotionbg";
 import Section2 from "../../sections/section2";
 import Inmiddelsection from "../../sections/inmiddelsection";
 import FlexItem from "../../sections/flexItem";
@@ -13,7 +12,6 @@ import HomeData from "../../../const/homeData";
 const Recruitment: React.FC = () => {
     return (
         <>
-            <Imgmotionbg></Imgmotionbg>
             <Main
                 {...recruitmentData.main}
             />

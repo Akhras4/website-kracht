@@ -17,7 +17,7 @@ const digitalmarketingData={
         Of je nu focust op verkoop, diensten of het werven van werknemers; Niice staat klaar om je online zichtbaarheid en aanwezigheid te versterken. Samen werken we aan jouw digital happiness.
     `,
         buttonText: "neem direct contact op",
-        buttonLink: "/over-ons/werkwijze/"
+        buttonLink: "/contact/"
     },
     inmiddelsection: {
         tittlePargraph: '',
@@ -53,7 +53,7 @@ const digitalmarketingData={
             'Digital happiness, wat houdt dat in voor jou? Concurrentievoordeel met een daadwerkelijk functionele webshop in jouw branche? Is happiness alles uit je bestaande klanten halen door te automatiseren en digitaliseren? Is dat een focus op resultaat, die stip op de horizon steeds dichterbij zien komen?',
             'Neem contact met ons op of bel met Bas, dan plannen we direct een afspraak in om jou, je bedrijf en je kansen te leren kennen.',
         ],
-        link: '',
+        link: '/contact/',
         text: 'neem direct contact op',
         imgSrc: kantoor2,
         imgAlt: 'kantoor2',

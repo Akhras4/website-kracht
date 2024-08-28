@@ -53,7 +53,6 @@ const Slider: React.FC<SliderProps> = ({ children }) => {
               x: { type: 'spring', stiffness: 50 },
               opacity: { duration: 2 },
             }}
-           
           >
             {isValidElement(child)
               ? React.cloneElement(child as ReactElement<any>, { forwardSection, backwardSection,activeSection:activeSection+1,childrenCount: childrenArray.length })

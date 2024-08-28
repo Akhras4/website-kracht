@@ -33,10 +33,9 @@ const Mobilenavbar:React.FC = () => {
     overflow: 'hidden',
   }}
 >
-  <div className="space-y-2">
-    <div className="w-8 h-1 bg-black"></div>
-    <div className="w-8 h-1 bg-black"></div>
-    <div className="w-8 h-1 bg-black"></div>
+  <div className="space-y-2 bg-white w-14 h-14 flex flex-col justify-center items-center rounded-full">
+    <div className="w-7 h-[2px] bg-black "></div>
+    <div className="w-7 h-[2px] bg-black"></div>
   </div>
 </div>
     <div
@@ -57,7 +56,7 @@ const Mobilenavbar:React.FC = () => {
               <div className="cursor-pointer flex items-center gap-3 mr-4" 
                     >
                 <span className="text-white text-base">sluiten</span>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2  ">
                   <span className="block h-[2px] w-[22px] bg-white transition-transform duration-300 ease-in-out delay-150 rotate-45 translate-y-[5px]"></span>
                   <span className="block h-[2px] w-[22px] bg-white transition-transform duration-300 ease-in-out delay-150 -rotate-45 translate-y-[-5px]"></span>
                 </div>

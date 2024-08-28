@@ -14,7 +14,7 @@ const ecommerceData = {
         title3: "",
         description: "Bied je fantastische producten aan, maar krijg je ze niet aan de man? Gaat veel van je budget naar advertenties, zonder dat je daar resultaten van terugziet? Wil je grip op de cijfers krijgen om verder op te schalen; niet alleen op omzet, maar ook écht op resultaat sturen? Als jouw business partner denken wij mee over je hele e-commerce business en zorgen we met een doelgerichte aanpak voor digital happiness.",
         buttonText: "neem direct contact op",
-        buttonLink: "/over-ons/werkwijze/"
+        buttonLink: "/contact/"
     },
     section2_1: {
         titlePargraf: "",
@@ -59,7 +59,7 @@ const ecommerceData = {
             "Altijd zoeken naar die stip, naar innoveren, naar relevant blijven. Ondanks dat die stip op de horizon blijft veranderen. Of verlegd wordt.",
             "We maken niet 1 tool, niet 1 oplossing, maar kijken naar je gehele digitale infrastructuur. Hoe kunnen we die verbeteren?"
         ],
-        link: '',
+        link: '/contact/',
         text: 'neem direct contact op',
         imgSrc: kantoor3,
         imgAlt: 'kantoor1',

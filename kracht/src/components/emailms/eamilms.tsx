@@ -13,12 +13,16 @@ const Emailms: React.FC = () => {
         setName(e.target.value);
     };
 
-    const sendEmail = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log(email)
-        console.log(name)
-        alert('Email sent!');
-    };
+    const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault(); 
+        try {
+          alert('Sending email:');
+          setEmail('');
+          setName('');
+        } catch (error) {
+          alert('Error sending email:');
+        }
+      };
     return (
         <div className="emailms">
             <div className="left">
@@ -33,11 +37,11 @@ const Emailms: React.FC = () => {
              </div>
                     <div className="right">
                     <div className="form">
-                    <form action="" onSubmit={sendEmail}>
+                    <form action="" onSubmit={sendEmail} >
                        <label htmlFor="name" ></label>
-                       <input type="text" id="name" required placeholder="voornaam" onChange={handleNameChange } />
+                       <input type="text" id="name" required placeholder="voornaam" value={name} onChange={handleNameChange } />
                        <label htmlFor="email"></label>
-                       <input type="email" id="email" required placeholder="E-mailadres" onChange={handleEmailChange}></input>
+                       <input type="email" id="email" required placeholder="E-mailadres" value={email} onChange={handleEmailChange}></input>
                        <button type="submit" className="arrow-button">
                             <svg
                                 width="70px"

@@ -1,16 +1,13 @@
 import React from "react"
 import Main from "../../main/main";
-import Imgmotionbg from "../../imgmotionbg/imgmotionbg";
 import Section2 from "../../sections/section2";
 import Inmiddelsection from "../../sections/inmiddelsection";
-
 import digitalTransformatieData from '../../../const/DigitalTransformatieData'
 
 
 const DigitalTransformatie: React.FC = () => {
   return (
     <>
-      <Imgmotionbg></Imgmotionbg>
       <Main
         {...digitalTransformatieData.main}
       />
