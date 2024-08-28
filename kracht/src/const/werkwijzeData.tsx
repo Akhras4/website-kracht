@@ -18,10 +18,12 @@ main:{
 inmiddelsection: {
     tittlePargraph: '01',
     title: "Match made in heaven",
-    subtitle: ["Kennismaking",
+    subtitle: [
+        "Kennismaking",
         "Wederzijds vertrouwen",
         "Sparren over digitale kansen en mogelijkheden",
-        "Samenwerkingsvoorstel"],
+        "Samenwerkingsvoorstel"
+    ],
 },
 section2: {
     titlePargraf: "01 Match made in heaven",

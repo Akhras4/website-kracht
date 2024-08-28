@@ -11,10 +11,9 @@ const customStyles: CustomStyles = {
         container: {
                 flexDirection: 'row',
                 textAlign: 'end',
-                
         },
         pStyle: {
-                alignSelf: 'center', 
+                alignSelf: 'center',
         },
         tittlePargraph: {
                 whiteSpace: 'nowrap'

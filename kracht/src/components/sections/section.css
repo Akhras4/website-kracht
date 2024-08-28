@@ -3,6 +3,7 @@ section {
     min-height: 100%;
     overflow: visible;
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .section hgroup {
@@ -14,6 +15,7 @@ section {
     margin-top: 3rem;
     margin-left: 0.5rem;
 
+   
 }
 
 .section h1 {
@@ -51,60 +53,41 @@ section {
         overflow-x: scroll;
         padding: 10px;
         position: relative;
+       
     }
 
 
     /* WebKit browsers (Chrome, Safari) */
     .sectionFlexcontiner::-webkit-scrollbar {
-        height: 5px;
-        /* Height of the scrollbar */
+        height: 10px;
+        align-content: center;
+     
     }
 
     .sectionFlexcontiner::-webkit-scrollbar-track {
-        background: white;
-        /* Background of the scrollbar track */
+        box-shadow: inset 0 0 5px grey;
+        background: rgb(47, 46, 46);
+        width: 50vw;
+        align-content: center;
     }
-
-    /* Style of the scrollbar thumb */
     .sectionFlexcontiner::-webkit-scrollbar-thumb {
         background: rgb(28, 124, 214);
-        /* Color of the scrollbar thumb */
-        border-radius: 10px;
-        /* Rounded corners for the thumb */
-        height: 6px;
-        /* Height of the thumb */
-        width: 20vw;
-        /* Width of the thumb */
         position: absolute;
-        bottom: 0;
-        /* Position at the bottom */
-        left: 50%;
-        /* Center horizontally */
-        transform: translateX(-50%);
-        /* Adjust positioning to be centered */
+        width: 16px;
+        height: 10px;
     }
-
-    /* Optional: Add hover effect for the thumb */
     .sectionFlexcontiner::-webkit-scrollbar-thumb:hover {
         background: rgb(156, 46, 129);
-        /* Color of the scrollbar thumb on hover */
     }
-
-    /* Apply cursor only to scrollbar area */
     .sectionFlexcontiner::-webkit-scrollbar-thumb {
         cursor: grab;
-        /* Cursor when not dragging */
     }
 
     .sectionFlexcontiner .scrollbar-overlay {
         cursor: grab;
-        /* Cursor when not dragging */
     }
-
-    /* Change cursor to grabbing when dragging */
     .sectionFlexcontiner::-webkit-scrollbar-thumb:active {
         cursor: grabbing;
-        /* Cursor when actively dragging */
     }
 }
 

@@ -23,6 +23,7 @@ footer.footer {
 
 }
 
+
 .footer h6 {
     color: #868cfe;
     font-size: calc(1rem + 0.3vw);
@@ -36,6 +37,7 @@ footer.footer {
 .footer .contact {
     color: #868cfe;
     font-size: calc(1.2rem);
+    pointer-events: none;
 }
 
 .footer p:hover {
@@ -44,8 +46,25 @@ footer.footer {
     transform: scale(1.1);
 
 }
+@media (max-width:490px) {
+    footer.footer {
+            margin-left: 1rem;
+    }
+    .footer .col {
+        width: 50vw;
+    }
+    .footer .contact {
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+}
 
 @media (max-width:900px) {
+    footer.footer {
+            margin-left: 1rem;
+    }
     .footer .col {
         width: 50vw;
     }

@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                 <p>Gildekamp 2311</p>
                 <p>6545 KM</p>
                 <p className="contact">0616692843</p>
-                <p className="contact">abdoakhras4@gmail.com</p>
+                <p className="contact">abdoakhras4<span>@gmail.com</span></p>
                 <p className="contact">Nijmagen</p>
                 <p></p>
             </div>
