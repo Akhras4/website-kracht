@@ -39,13 +39,13 @@ const workhardplayharderData={
         imgScr:[imgslider1,imgslider2,imgslider3],
         imgAlt:"sport",
         items:{
-            item:{ title:"Feesten",
+            item1:{ title:"Feesten",
                 description:'Onze feestkalender is altijd goed gevuld. Al maanden van tevoren verheugen we ons op weer een feest om daar vervolgens nog maanden over te praten. Maak één feest mee, en je bent binnen. Workations, zomerborrels, momentjes op de Zwarte Cross, suppen, volleyballen. You name it, we (will) do it.',
             },
-            item1:{ title:"Ontdekken",
+            item2:{ title:"Ontdekken",
                 description:"Een nieuwe plek, een andere sport, een speciaal biertje... Samen gaan we graag op ontdekkingstocht. Of dat nu van tevoren afgesproken is of spontaan. Onze uitjes bestaan vaak uit een sport- of spelelement, lekker eten en op z'n tijd een kleine dorstlesser. Zo blijven we samen steeds nieuwe dingen ontdekken!",
             },
-            item2:{ title:"Sporten",
+            item3:{ title:"Sporten",
                 description:"Elke woensdag staan we samen bij PT Robin te strijden. Maar ons bloed, zweet en tranen blijft niet beperkt tot die dag! Nee, voor de collega's die willen is er altijd iets sportiefs te beleven. Vrij sporten, samen wielrennen, een potje padel, de meesten van ons zijn voor alles wel te porren!",
             }
         },

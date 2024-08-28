@@ -6,7 +6,6 @@ import digitaletransform from '../assets/img/section1flexitem/krachtkantoor.webp
 import demandleadgen from '../assets/img/section1flexitem/karctbranndshot.webp'
 import ecommerce from '../assets/img/section1flexitem/ecom.webp'
 import reccruitment from '../assets/img/section1flexitem/krachtdeman.webp'
-
 import kantoor1 from '../assets/img/section2/kracht-brandshoot-1.webp'
 import kantoor2 from '../assets/img/section2/kract-brandshoot-2.webp'
 
@@ -137,7 +136,7 @@ const HomeData = {
       'Terwijl jij focust op dat waar jij goed in bent, combineren wij design, development, copy, data, foto- en videografie tot de beste mix voor jou.',
       'Die combinatie en de route zijn elke keer anders. Onze werkwijze niet.'
     ],
-    link: '',
+    link: '/over-ons/werkwijze/',
     text: 'dit is onze werkwijze',
     direction: 'row',
     imgSrc: kantoor1,
@@ -153,11 +152,18 @@ const HomeData = {
       'Terwijl jij focust op dat waar jij goed in bent, combineren wij design, development, copy, data, foto- en videografie tot de beste mix voor jou.',
       'Die combinatie en de route zijn elke keer anders. Onze werkwijze niet.'
     ],
-    link: '',
-    text: 'dit is onze werkwijze',
+    link: '/contact/',
+    text: 'neem contact op',
     imgSrc: kantoor2,
     imgAlt: 'kantoor1',
-  }
+  },
+  Inmiddelsection:{
+    tittlePargraph: 'Hoe de wens om een nieuwe webshop leidt tot een duurzame samenwerking',
+    title: "Transferpersshop.nl's road to digital happiness",
+    subtitle: [
+        'Dit is hoe de wens van Transferpersshop.nl voor een nieuwe webshop leidde tot een duurzame samenwerking. Van webshop en digitalisering tot procesoptimalisaties, copy, campagnes én social content door liike.',
+    ],
+  },
 
 }
 

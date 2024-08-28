@@ -18,7 +18,7 @@ const digitalbusinessstrategyData={
         Wij duiken met jou de diepte in, gaan verder en werken samen aan digital happiness.
     `,
         buttonText: "neem direct contact op",
-        buttonLink: "/over-ons/werkwijze/"
+        buttonLink: "/contact/"
     },
     section2: {
         titlePargraf: "hoe vind je jouw focus?",
@@ -49,7 +49,7 @@ const digitalbusinessstrategyData={
             'Digital happiness, wat houdt dat in voor jou? Concurrentievoordeel met een daadwerkelijk functionele webshop in jouw branche? Is happiness alles uit je bestaande klanten halen door te automatiseren en digitaliseren? Is dat een focus op resultaat, die stip op de horizon steeds dichterbij zien komen?',
             'Neem contact met ons op of bel met Bas, dan plannen we direct een afspraak in om jou, je bedrijf en je kansen te leren kennen.',
         ],
-        link: '',
+        link: '/contact/',
         text: 'neem direct contact op',
         imgSrc: kantoor2,
         imgAlt: 'kantoor2',

@@ -14,7 +14,7 @@ const digitalTransformatieData = {
         title3: '',
         description: "De wereld verandert sneller dan ooit tevoren. Juist nu is het essentieel voor bedrijven die voorop willen lopen en in de toekomst relevant willen blijven om hun digitale infrastructuur in kaart te brengen. Om te innoveren. Om processen te optimaliseren, automatiseren en om inzichten te creëren op basis van data. Digitaal transformeren dus. Als jouw digitale business partner denken wij mee van begin tot eind en geven we samen je transformatie vorm. Waarom? Om te voorkomen dat je wordt ingehaald door concurrenten of de nieuwe generatie. Om waarde toe te blijven voegen voor je collega's. Om marges te vergroten en taken te vereenvoudigen, zodat je team zich kan richten op waardevollere werkzaamheden. Én om een sterke binding en behoud van medewerkers te garanderen.",
         buttonText: "neem direct contact op",
-        buttonLink: "/over-ons/werkwijze/"
+        buttonLink: "/contact/"
     },
     section2: {
         titlePargraf: "",
@@ -88,7 +88,7 @@ const digitalTransformatieData = {
             'En daar helpen wij je bij! Niet alleen met technische oplossingen of marketing, ook met advies en ondersteuning. Laten we eens praten, dan laten we zien wat je opties zijn.',
             'Neem contact met ons op of <span>bel met Bas</span>, dan plannen we direct een afspraak in om jou, je bedrijf en je kansen te leren kennen.'
         ],
-        link: '',
+        link: '/contact/',
         text: 'neem direct contact op',
         imgSrc: kantoor4,
         imgAlt: 'kantoor4',

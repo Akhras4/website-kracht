@@ -11,7 +11,7 @@ const recruitmentData = {
         title3: '',
         description: "Wil jij grip krijgen op een oneindige stroom aan leads? Lukt het niet om de juiste doelgroep aan te trekken? Komen de leads wel binnen, maar zijn deze niet kwalitatief genoeg voor sales om op te volgen? Wij denken mee over je hele business en weten met een doelgerichte aanpak de juiste mensen of bedrijven aan te trekken.",
         buttonText: "neem direct contact op",
-        buttonLink: "/over-ons/werkwijze/"
+        buttonLink: "/contact/"
     },
     section2: {
         titlePargraf: "Vertel ons jouw doel",
@@ -20,7 +20,7 @@ const recruitmentData = {
             "Jij wilt werken aan een toekomstbestendig bedrijf en voorop lopen in de markt. Wij willen jou - als bedrijf en mens - helpen om digitale kansen optimaal in te zetten voor je organisatie. Niet alleen met technische oplossingen of marketing, ook met advies en ondersteuning.",
             "Neem contact met ons op of bel met Bas, dan plannen we direct een afspraak in om jou, je bedrijf en je kansen te leren kennen."
         ],
-        link: '',
+        link: '/contact/',
         text: "neem direct contact op",
         imgSrc: kantoor1Section,
         imgAlt: "kantoor1",
@@ -44,7 +44,7 @@ const recruitmentData = {
             "Jij wilt werken aan een toekomstbestendig bedrijf en voorop lopen in de markt. Wij willen jou - als bedrijf en mens - helpen om digitale kansen optimaal in te zetten voor je organisatie. Niet alleen met technische oplossingen of marketing, ook met advies en ondersteuning.",
             "Neem contact met ons op of bel met Bas, dan plannen we direct een afspraak in om jou, je bedrijf en je kansen te leren kennen."
         ],
-        link: '',
+        link: '/contact/',
         text: "neem direct contact op",
         imgSrc: kantoor2Section,
         imgAlt: "kantoor2",

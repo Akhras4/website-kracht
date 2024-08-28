@@ -17,30 +17,33 @@
     height: 33vh;
     background-color: white;
     border-radius: 30px;
-
+    overflow: hidden;
 
   }
   .logo-item img {
-    max-height: 50px;
+    max-height: 80px;
     width: auto;
+    object-fit: cover;
 }
   .logo-item img {
     filter: grayscale(1);
 }
-.logo-item img:hover{
+.logo-item img:hover,.logo-item:hover img {
     filter: grayscale(0);
   
 }
   @media (max-width: 767px) {
     .logo-item {
         width: 40vw;
-        height: 20vh;
+        height: 30vh;
     }
        
   }
   @media (max-width: 384px) {
     .logo-item {
-        border-radius: 10px;
+        border-radius: 6px;
+        width: 40vw;
+        height: 25vh;
     }
   }
   @media screen and ( min-width: 1700px ){

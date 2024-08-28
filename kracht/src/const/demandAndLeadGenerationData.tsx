@@ -54,7 +54,7 @@ const demandAndLeadGenerationData = {
             'Jij wilt werken aan een toekomstbestendig bedrijf en voorop lopen in de markt. Wij willen jou - als bedrijf en mens - helpen om digitale kansen optimaal in te zetten voor je organisatie. Niet alleen met technische oplossingen of marketing, ook met advies en ondersteuning.',
             'Neem contact met ons op of bel met Bas, dan plannen we direct een afspraak in om jou, je bedrijf en je kansen te leren kennen.'
         ],
-        link: '',
+        link: '/contact/',
         text: 'neem direct contact op',
         imgSrc: kantoor1Section,
         imgAlt: 'kantoor1',

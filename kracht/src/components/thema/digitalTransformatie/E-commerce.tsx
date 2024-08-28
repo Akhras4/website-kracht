@@ -1,6 +1,5 @@
 import React from "react";
 import Main from "../../main/main";
-import Imgmotionbg from "../../imgmotionbg/imgmotionbg";
 import Section2 from "../../sections/section2";
 import Section1 from "../../sections/section1";
 import FlexItem from "../../sections/flexItem";
@@ -14,7 +13,6 @@ import ecommerceData from "../../../const/Ecommerceconst";
 const Ecommerce : React.FC = () => {
     return (
         <>
-        <Imgmotionbg></Imgmotionbg>
         <Main
          {...ecommerceData.main}
         />

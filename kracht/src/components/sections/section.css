@@ -65,15 +65,14 @@ section {
     }
 
     .sectionFlexcontiner::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        background: rgb(47, 46, 46);
+        background: #161e23;
         width: 50vw;
         align-content: center;
     }
     .sectionFlexcontiner::-webkit-scrollbar-thumb {
-        background: rgb(28, 124, 214);
+        background: #63c4dc !important;
         position: absolute;
-        width: 16px;
+        width: 16px ;
         height: 10px;
     }
     .sectionFlexcontiner::-webkit-scrollbar-thumb:hover {

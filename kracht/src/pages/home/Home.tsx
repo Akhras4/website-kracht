@@ -6,7 +6,7 @@ import FlexItem from "../../components/sections/flexItem";
 import Section3 from '../../components/sections/section3'
 import Main from '../../components/main/main';
 import HomeData from '../../const/homeData'
-
+import Inmiddelsection from '../../components/sections/inmiddelsection';
 
 
 
@@ -83,6 +83,9 @@ function Home() {
       ))}
       </Section1>
       <Section3 />
+      <Inmiddelsection {...HomeData.Inmiddelsection}
+      displayType='pargraph' 
+      />
       <Section2 
       {...HomeData.section2_1}
       direction='row-reverse'

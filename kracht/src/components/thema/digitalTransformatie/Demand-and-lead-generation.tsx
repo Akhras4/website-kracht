@@ -1,11 +1,9 @@
 import React from "react"
 import Main from "../../main/main";
-import Imgmotionbg from "../../imgmotionbg/imgmotionbg";
 import Inmiddelsection from "../../sections/inmiddelsection";
 import Section2 from "../../sections/section2";
 import FlexItem from "../../sections/flexItem";
 import Section1 from "../../sections/section1";
-
 import demandAndLeadGenerationData from '../../../const/demandAndLeadGenerationData'
 import HomeData from "../../../const/homeData";
 
@@ -13,7 +11,6 @@ import HomeData from "../../../const/homeData";
 const DemandAndLeadGeneration: React.FC = () => {
   return (
     <>
-      <Imgmotionbg></Imgmotionbg>
       <Main
         {...demandAndLeadGenerationData.main}
       />

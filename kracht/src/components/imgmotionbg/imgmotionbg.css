@@ -2,7 +2,7 @@
   position: absolute;
   top: 10vh;
   left: 0;
-  width: 100vw;
+  width: 90vw;
   height: 80vh;
   z-index: -1;
   pointer-events: none;
@@ -18,8 +18,9 @@
 
 .blueimg {
   position: absolute;
-  top: 10vh;
-  left: 20vh;
+  top: 20vh;
+  left: 30vh;
+  filter: brightness(-3);
 }
 
 @media screen and (max-width: 800px) {

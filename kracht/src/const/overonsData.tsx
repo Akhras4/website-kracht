@@ -36,13 +36,13 @@ const overonsData={
         imgScr:[imgslider3,imgslider4,imgslider2],
         imgAlt:"sport",
         items:{
-            item:{ title:"Fit en energiek",
+            item1:{ title:"Fit en energiek",
                 description:'Fit en energiek? Jullie kantoorlui maken zeker elke dag een lunchwandeling." Klopt. Maar we doen meer! Strong Vikings, (halve) marathons, een aantal keer per week sporten zonder en met PT, wielrennen, suppen, padellen... Samen is geen uitdaging ons te gek. Zo houden we de energie erin en kunnen we met plezier en focus knallen!',
             },
-            item1:{ title:"Straightforward",
+            item2:{ title:"Straightforward",
                 description:"We doen wat we zeggen en we zeggen wat we doen. Dingen mooier maken dan het is, daar wordt niemand beter van. Dat doen we dus niet. En dat verwachten we ook niet van jou! Soms is dat lastig, maar onze samenwerking én de resultaten worden er mooier van. En dat betekent weer een stap dichter naar digital happiness.",
             },
-            item2:{ title:"Veerkrachtig",
+            item3:{ title:"Veerkrachtig",
                 description:"Bij de pakken neerzitten? Dat past niet bij ons. Soms lukt iets niet. Hoe hard we ons ook inzetten, hoeveel we er ook aan werken. Dan moet je leren los te laten en door te gaan. Het anders te doen. Daar ligt onze kracht en daar blijven we aan werken. Balen, accepteren en doorgaan of opnieuw beginnen!",
             }
         },
@@ -53,13 +53,13 @@ const overonsData={
         imgScr:[imgslider,imgslider1,imgslider2],
         imgAlt:"sport",
         items:{
-            item:{ title:"Plezier en positiviteit",
+            item1:{ title:"Plezier en positiviteit",
                 description:'Het is het geheim achter het succes in alles dat we doen, maken, delen. Plezier. En dat werkt aanstekelijk. Voor onszelf, voor onze klanten en voor de mensen om ons heen. En als we dan fantastische digitale oplossingen, campagnes en samenwerkingen neer kunnen zetten, zijn wij blij.',
             },
-            item1:{ title:"Creativiteit",
+            item2:{ title:"Creativiteit",
                 description:"Nieuwe ideeën delen, dingen anders doen, vette designs ontwerpen, bloedstollende teksten schrijven of adembenemende beelden schieten. Mooie dingen maken, daar worden we blij van. Dus laat je creativiteit de vrije loop gaan - klant en collega - en blaas ons van onze sokken.",
             },
-            item2:{ title:"Ondernemend",
+            item3:{ title:"Ondernemend",
                 description:"Zitten, afwachten en een beetje naar het systeemplafond zitten staren worden we niet blij van. Kansen genoeg om aan te grijpen. Dus heb je een vet idee? Let's go. Wij zijn klaar om jouw uitdaging met beide handen aan te grijpen en onze tanden erin vast te bijten.",
             }
         },
@@ -140,6 +140,126 @@ const overonsData={
             numberAndSort: '#535bf2',
             link: ''
           },
+          {
+            imageSrc: bas,
+            imageAlt: "bas",
+            Heading: 'strateeg en new business',
+            Paragraph: `bas`,
+            sort:'',
+            number: 0,
+            numberAndSort: '#535bf2',
+            link: ''
+          },
+          {
+              imageSrc: sli,
+              imageAlt: "sli",
+              Heading: 'designer',
+              Paragraph: `sli`,
+              number: 0,
+              sort:'',
+              numberAndSort: '#535bf2',
+              link: ''
+            },
+            {
+              imageSrc: emma,
+              imageAlt: "emma",
+              Heading: 'copywriter',
+              Paragraph: `emma`,
+              number: 0,
+              sort:'',
+              numberAndSort: '#535bf2',
+              link: ''
+            },
+            {
+              imageSrc: ken,
+              imageAlt: "ken",
+              Heading: 'designer en developer',
+              Paragraph: `ken`,
+              number: 0,
+              sort:'',
+              numberAndSort: '#535bf2',
+              link: ''
+            },
+            {
+              imageSrc: luuk,
+              imageAlt: "luuk",
+              Heading: 'marketeer',
+              Paragraph: `luuk`,
+              number: 0,
+              sort:'',
+              numberAndSort: '#535bf2',
+              link: ''
+            },
+            {
+              imageSrc: Sjoerd,
+              imageAlt: "Sjoerd",
+              Heading: 'team lead marketing',
+              Paragraph: `Sjoerd`,
+              number: 0,
+              sort:'',
+              numberAndSort: '#535bf2',
+              link: ''
+            },
+            {
+                imageSrc: bas,
+                imageAlt: "bas",
+                Heading: 'strateeg en new business',
+                Paragraph: `bas`,
+                sort:'',
+                number: 0,
+                numberAndSort: '#535bf2',
+                link: ''
+              },
+              {
+                  imageSrc: sli,
+                  imageAlt: "sli",
+                  Heading: 'designer',
+                  Paragraph: `sli`,
+                  number: 0,
+                  sort:'',
+                  numberAndSort: '#535bf2',
+                  link: ''
+                },
+                {
+                  imageSrc: emma,
+                  imageAlt: "emma",
+                  Heading: 'copywriter',
+                  Paragraph: `emma`,
+                  number: 0,
+                  sort:'',
+                  numberAndSort: '#535bf2',
+                  link: ''
+                },
+                {
+                  imageSrc: ken,
+                  imageAlt: "ken",
+                  Heading: 'designer en developer',
+                  Paragraph: `ken`,
+                  number: 0,
+                  sort:'',
+                  numberAndSort: '#535bf2',
+                  link: ''
+                },
+                {
+                  imageSrc: luuk,
+                  imageAlt: "luuk",
+                  Heading: 'marketeer',
+                  Paragraph: `luuk`,
+                  number: 0,
+                  sort:'',
+                  numberAndSort: '#535bf2',
+                  link: ''
+                },
+                {
+                  imageSrc: Sjoerd,
+                  imageAlt: "Sjoerd",
+                  Heading: 'team lead marketing',
+                  Paragraph: `Sjoerd`,
+                  number: 0,
+                  sort:'',
+                  numberAndSort: '#535bf2',
+                  link: ''
+                },
     ],
     inmiddelsection_2: {
         tittlePargraph: 'Een team vol knappe koppen',

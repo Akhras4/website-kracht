@@ -3,7 +3,7 @@ import './main.css';
 import TextButton from "../TextButton/TextButton";
 import { motion } from 'framer-motion';
 import Light from "../light/light";
-
+import Imgmotionbg from "../imgmotionbg/imgmotionbg";
 interface MainProps {
   imageSrc: string;
   imageAlt: string;
@@ -29,6 +29,7 @@ const Main: React.FC<MainProps> = ({
 }) => {
   return (
     <main id="main" className="mt-16 flex justify-end gap-10 pt-14">
+      <Imgmotionbg />
       <motion.div 
         id="left" 
         className="z-50 w-6/12 h-6/12"

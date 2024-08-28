@@ -35,20 +35,22 @@ const Duurzaamondernemen: React.FC =()=>{
          displayType="pargraph" 
          customStyles={customStyles} 
          />
+         <div className="min-h-[120vh]">
          <Slider >
-         <Section2 {...duurzaamondernemenData.section2_1} direction="row-reverse" displayType="pargraph">
+         <Section2 {...duurzaamondernemenData.section2_1} direction="row-reverse" displayType="pargraph" InViewSlider={true}>
          <Buttons forwardSection={() => {}} backwardSection={() => {}} />
             </Section2>
-            <Section2 {...duurzaamondernemenData.section2_2} direction="row-reverse" displayType="pargraph">
+            <Section2 {...duurzaamondernemenData.section2_2} direction="row-reverse" displayType="pargraph" InViewSlider={true}>
             <Buttons forwardSection={() => {}} backwardSection={() => {}} />
               </Section2>
-              <Section2 {...duurzaamondernemenData.section2_3} direction="row-reverse" displayType="pargraph">
+              <Section2 {...duurzaamondernemenData.section2_3} direction="row-reverse" displayType="pargraph" InViewSlider={true}>
             <Buttons forwardSection={() => {}} backwardSection={() => {}} />
               </Section2>
-              <Section2 {...duurzaamondernemenData.section2_4} direction="row-reverse" displayType="pargraph">
+              <Section2 {...duurzaamondernemenData.section2_4} direction="row-reverse" displayType="pargraph" InViewSlider={true}>
             <Buttons forwardSection={() => {}} backwardSection={() => {}} />
               </Section2>
        </Slider>
+       </div>
         </>
     )
 }

@@ -3,7 +3,6 @@ import Main from "../../components/main/main";
 import Section2 from "../../components/sections/section2";
 import Inmiddelsection from "../../components/sections/inmiddelsection";
 import digitalbusinessstrategyData from "../../const/digitalbusinessstrategyData";
-
 const Digitalbusinessstrategy: React.FC = () => {
     return(
         <>
