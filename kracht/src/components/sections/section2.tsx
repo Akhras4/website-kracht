@@ -5,7 +5,6 @@ import Unorderlist from './unorderlist';
 import Imgbg from '../imgbg/imgbg';
 import Buttons from '../buttons/buttons';
 
-
 interface section2Props {
     titlePargraf: string;
     title: string;
@@ -20,7 +19,8 @@ interface section2Props {
     forwardSection?: () => void;
     backwardSection?: () => void;
     activeSection?: number;
-    childrenCount?: number
+    childrenCount?: number;
+    childType?:string
 
 }
 
@@ -38,10 +38,10 @@ const section2: React.FC<section2Props> = ({
     forwardSection,
     backwardSection,
     activeSection,
-    childrenCount
+    childrenCount,
+    childType
 
 }) => {
-
     return (
         <section className='section2'>
             {direction === 'row' ? <Imgbg /> : null}
@@ -52,24 +52,20 @@ const section2: React.FC<section2Props> = ({
                             {titlePargraf ? <p id='titlePargraf'>{titlePargraf}</p> : null}
                             {title ?<h1>{title}</h1> :null}
                             {displayType === 'pargraph' ? (
-                                <>
-                                    {description.map((item, index) => (
-                                        <p key={index} className="description-paragraph">{item}</p>
-                                    ))}
-                                </>
+                                <>{description.map((item, index) => (<p key={index} className="description-paragraph">{item}</p>))}</>
                             ) : (
-                                <Unorderlist
-                                    list={description}
+                                <Unorderlist list={description}
                                 />
                             )}
 
                         </div>
+                        {childType==='form' && children}
                         {text  ? <TextButton text={text} link={link} /> :null}
      
                     </div>
                     <div className='part1'>
                         <img src={imgSrc} alt={imgAlt} />
-                        {children}
+                        { childType!=='form' && children}
                         {forwardSection && backwardSection && (
                             <>
                                 <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
@@ -84,7 +80,7 @@ const section2: React.FC<section2Props> = ({
                 <>
                     <div className='part1'>
                         <img src={imgSrc} alt={imgAlt} />
-                        {children}
+                        { childType!=='form' && children}
                         {forwardSection && backwardSection && (
                             <>
                                 <Buttons forwardSection={forwardSection} backwardSection={backwardSection} />
@@ -110,6 +106,8 @@ const section2: React.FC<section2Props> = ({
                                 />
                             )}
                         </div>
+
+                        {childType==='form' && children}
                         {text ? (<TextButton text={text} link={link} />) : (null)}
 
                     </div>

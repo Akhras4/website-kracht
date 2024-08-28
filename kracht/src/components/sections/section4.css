@@ -1,9 +1,8 @@
 .section4{
     margin-bottom: 4rem;
    max-width: 1400px;
-   height: 100vh;
+   height: fit-content;
    max-height: 1000px;
-   overflow: hidden;
     
 }
 

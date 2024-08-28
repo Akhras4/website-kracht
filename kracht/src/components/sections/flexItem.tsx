@@ -3,15 +3,14 @@ import './flexitem.css'
 import { Link } from "react-router-dom";
 
 interface FlexItemProps{
-    imageSrc: string;
-    imageAlt: string;
+    imageSrc?: string;
+    imageAlt?: string;
     Heading:string;
     Paragraph:string;
     sort:string;
-    number:number;
+    number:number | string;
     numberAndSort:string;
     link:string
-
 }
 
 const FlexItem:React.FC<FlexItemProps>=({
@@ -27,15 +26,15 @@ const FlexItem:React.FC<FlexItemProps>=({
     return (
         <>
         <div id ="flexitem" >
-            <img src={imageSrc} alt={imageAlt} style={{width:'100%', height:'80%',borderRadius:'20px'}} />
+            {imageSrc ? <img src={imageSrc} alt={imageAlt} style={{width:'100%', height:'80%',borderRadius:'20px'}} />: null }
             <div className="flexitemtext">
                 <div className="flex">
-                    {number ?<h2 style={{color:numberAndSort,marginRight:'8px'}}>0{number}.</h2>:null}
+                    {number ?<h2 style={{color:numberAndSort,marginRight:'8px'}}>{number}</h2>:null}
                     {number ? <h2>{Heading}</h2>:<h2 style={{fontSize:'20px',color:numberAndSort}}>{Heading}</h2>}
                 </div>
                 {number ?<p className="paragraph-text">{Paragraph}</p>:<h2 style={{fontSize:'35px', marginTop:'-10px'}}>{Paragraph}</h2>}
                 {link ?
-                <Link to={link} >
+                <Link to={link} target={(sort==='Bel ons'|| 'Mail ons')?"_blank":'_self'} >
                 <button className="sort" style={{color:numberAndSort}}>
                 {sort}
                     <svg width="30px" height="8px" viewBox="0 0 30 8" version="1.1" xmlns="http://www.w3.org/2000/svg" >

@@ -1,11 +1,8 @@
 html{
-
   scroll-behavior: smooth;
   overflow-y: visible;
   overflow-x: hidden;
   max-width: 100vw;
-
-
 }
 
 a {
@@ -14,7 +11,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: white;
 }
 body{
     background-color: rgb(12, 27, 36);

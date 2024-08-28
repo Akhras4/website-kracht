@@ -33,14 +33,12 @@ const Mobilenavbar:React.FC = () => {
     overflow: 'hidden',
   }}
 >
-  {/* Hamburger Icon */}
   <div className="space-y-2">
     <div className="w-8 h-1 bg-black"></div>
     <div className="w-8 h-1 bg-black"></div>
     <div className="w-8 h-1 bg-black"></div>
   </div>
 </div>
-    {/* Navigation Menu */}
     <div
       className={`lg:hidden fixed top-0 left-0 w-full h-full z-[99999] transition-all duration-700 ease-in-out`}
       style={{
@@ -54,7 +52,6 @@ const Mobilenavbar:React.FC = () => {
         <div className="absolute left-0 top-0 w-full h-full z-[105]">
           <div className="container mx-auto h-full"
           >
-            {/* Close Button */}
             <div className="pt-12 w-full flex justify-end items-center z-[100] cursor-pointer"onClick={closeNav}
             >
               <div className="cursor-pointer flex items-center gap-3 mr-4" 
@@ -66,9 +63,7 @@ const Mobilenavbar:React.FC = () => {
                 </div>
               </div>
             </div>
-            {/* Navigation Links */}
             <nav className="mt-10 relative  flex flex-col justify-center lg:justify-start items-start gap-4">
-              {/* Dropdown for 'diensten' */}
               <div className="w-full">
                 <div
                   className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer"
@@ -80,7 +75,6 @@ const Mobilenavbar:React.FC = () => {
                     height="8"
                     viewBox="0 0 12 8"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
                     className={`w-3 h-3 transition-transform duration-300 ${activeDropdown === 'diensten' ? 'rotate-90' : '-rotate-90'}`}
                   >
                     <path
@@ -99,7 +93,6 @@ const Mobilenavbar:React.FC = () => {
                   </div>
                 )}
               </div>
-              {/* Dropdown for 'over ons' */}
               <div className="w-full">
                 <div
                   className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer"
@@ -128,7 +121,6 @@ const Mobilenavbar:React.FC = () => {
                   </div>
                 )}
               </div>
-              {/* Other menu items */}
               <a href="/work-hard-play-harder/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">jobs</a>
               <a href="/cases/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">cases</a>
               <a href="/blogs/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">blogs</a>

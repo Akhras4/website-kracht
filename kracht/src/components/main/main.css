@@ -52,6 +52,7 @@ main h1 {
         flex-direction: column-reverse;
         gap: 0;
         position: relative;
+        margin-left: 0.5rem;
 
     }
 
@@ -104,8 +105,8 @@ main h1 {
         height: 80vh;
         position: absolute;
         height: fit-content;
-        top: -11rem;
-        right: -6rem;
+        top: -4rem;
+        right: -2rem;
         overflow: hidden;
 
     }

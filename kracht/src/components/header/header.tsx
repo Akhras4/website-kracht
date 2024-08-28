@@ -6,15 +6,16 @@ const Header: React.FC  = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-[9999] pointer-events-none">
       <header className="container mx-auto pt-12 flex items-center justify-between duration-300 ease-in-out scrolled">
-        <a href="/" className="pointer-events-auto nuxt-link-active nuxt-link-prefetched logo-smile" id="logo-wrapper">
+        <a href="/" className="pointer-events-auto " id="logo-wrapper">
           <div className="kracht-logo">
-            <div className="kracht-eye">
+            <div className="kracht-eye ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="203"
               height="67"
               fill="none"
-              viewBox="0 10 203 37"
+              viewBox="20 15 203 67"
+              
             >
               <g id="frame logo">
                 <path fill="#none" d="M0 0H203V67H0z"></path>

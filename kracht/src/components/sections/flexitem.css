@@ -6,6 +6,13 @@
     -webkit-box-orient: vertical;
     line-height: 1.5;
 }
+.parent-div .flexitemtext > p {
+    text-overflow:clip;
+    display: block;
+  }
+  .parent-div .flexitemtext .sort {
+    color: white !important;
+  }
 
 .flexitemtext {
     display: flex;
@@ -43,6 +50,7 @@
 }
 #flexitem h2 {
     font-size: 1.05rem;
+    white-space: nowrap;
 }
 
 #flexitem .sort:hover {
@@ -53,4 +61,11 @@
 #flexitem svg {
     width: 30px;
     height: 8px;
+}
+@media screen and (max-width:400px) {
+    #flexitem h2 {
+        font-size: 1rem;
+        white-space: wrap;
+    }
+    
 }
