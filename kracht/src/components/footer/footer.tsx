@@ -1,6 +1,5 @@
 import React from "react"
 import './footer.css'
-import { Link } from "react-router-dom"
 // import Imgbg from "../imgbg/imgbg"
 const Footer: React.FC = () => {
     return (
@@ -17,7 +16,7 @@ const Footer: React.FC = () => {
             </div>
             <div className="col">
                 <h6>over kracht</h6>
-                <Link to="/over-ons/"><p>Team & cultuur</p></Link>
+                <a href="/over-ons/"><p>Team & cultuur</p></a>
                 <a href="/over-ons/werkwijze/"><p>Werkwijze</p></a>
                 <a href="/diensten/social-content/"><p>Diensten</p></a>
                 <a href="/over-ons/duurzaam-ondernemen/"><p>Duurzaam ondernemen</p></a>
