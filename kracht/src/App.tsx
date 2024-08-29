@@ -1,6 +1,6 @@
 import './App.css'
 import Home from './pages/home/Home.tsx';
-import Nopage from './pages/nopage/nopage.tsx';
+// import Nopage from './pages/nopage/nopage.tsx';
 import { BrowserRouter , Routes, Route  } from 'react-router-dom';
 import DigitalTransformatie from './components/thema/digitalTransformatie/digitalTransformatie.tsx';
 import Ecommerce from './components/thema/digitalTransformatie/E-commerce.tsx';
