@@ -40,7 +40,7 @@ function App() {
                     <Route path='/over-ons/werkwijze/' element={<Werkwijze />} />
                     <Route path='/work-hard-play-harder/' element={<Workhardplayharder />} />
                     <Route path='/contact/' element={<Contact />} />
-                    <Route path="*" element={<Nopage />} />
+                    {/* <Route path="*" element={<Nopage />} /> */}
                 </Routes>
             </BrowserRouter>
         <Emailms />
