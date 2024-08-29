@@ -1,0 +1,10 @@
+[build]
+  # Set your build output directory here
+  publish = "kracht/dist"  # Ensure this matches your build output directory
+  # Add your build command if needed
+  # command = "npm run build"  # Example build command; adjust as needed
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
