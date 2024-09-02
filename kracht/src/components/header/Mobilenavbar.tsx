@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import './headerandnav.css'
+import { Link } from 'react-router-dom';
 
 type DropdownType = 'diensten' | 'over-ons' | null;
 
@@ -84,11 +85,11 @@ const Mobilenavbar:React.FC = () => {
                 </div>
                 {activeDropdown === 'diensten' && (
                   <div className="mt-6">
-                    <a href="/thema/" className="px-6 py-3 w-full bg-white/10 text-white rounded-full block cursor-pointer">Uitdagingen</a>
-                    <a href="/thema/digitale-transformatie/" className="px-6 py-3 block w-full text-white text-base rounded-full">digitale transformatie</a>
-                    <a href="/thema/e-commerce/" className="px-6 py-3 block w-full text-white text-base rounded-full">e-commerce</a>
-                    <a href="/thema/demand-leadgeneration/" className="px-6 py-3 block w-full text-white text-base rounded-full">demand & lead generation</a>
-                    <a href="/thema/recruitment/" className="px-6 py-3 block w-full text-white text-base rounded-full">recruitment marketing</a>
+                    <Link to="/thema/" className="px-6 py-3 w-full bg-white/10 text-white rounded-full block cursor-pointer">Uitdagingen</Link>
+                    <Link to="/thema/digitale-transformatie/" className="px-6 py-3 block w-full text-white text-base rounded-full">digitale transformatie</Link>
+                    <Link to="/thema/e-commerce/" className="px-6 py-3 block w-full text-white text-base rounded-full">e-commerce</Link>
+                    <Link to="/thema/demand-leadgeneration/" className="px-6 py-3 block w-full text-white text-base rounded-full">demand & lead generation</Link>
+                    <Link to="/thema/recruitment/" className="px-6 py-3 block w-full text-white text-base rounded-full">recruitment marketing</Link>
                   </div>
                 )}
               </div>
@@ -114,16 +115,16 @@ const Mobilenavbar:React.FC = () => {
                 </div>
                 {activeDropdown === 'over-ons' && (
                   <div className="mt-6">
-                    <a href="/over-ons/" className="px-6 py-3 block w-full text-white text-base rounded-full">over ons</a>
-                    <a href="/over-ons/werkwijze/" className="px-6 py-3 block w-full text-white text-base rounded-full">werkwijze</a>
-                    <a href="/over-ons/duurzaam-ondernemen/" className="px-6 py-3 block w-full text-white text-base rounded-full">duurzaam ondernemen</a>
+                    <Link to="/over-ons/" className="px-6 py-3 block w-full text-white text-base rounded-full">over ons</Link>
+                    <Link to="/over-ons/werkwijze/" className="px-6 py-3 block w-full text-white text-base rounded-full">werkwijze</Link>
+                    <Link to="/over-ons/duurzaam-ondernemen/" className="px-6 py-3 block w-full text-white text-base rounded-full">duurzaam ondernemen</Link>
                   </div>
                 )}
               </div>
-              <a href="/work-hard-play-harder/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">jobs</a>
-              <a href="/cases/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">cases</a>
-              <a href="/blogs/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">blogs</a>
-              <a href="/contact/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">contact</a>
+              <Link to="/work-hard-play-harder/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">jobs</Link>
+              <Link to="/cases/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">cases</Link>
+              <Link to="/blogs/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">blogs</Link>
+              <Link to="/contact/" className="px-6 py-3 w-full bg-white/10 text-white text-base rounded-full flex items-center justify-between hover:bg-white/50 duration-200 cursor-pointer">contact</Link>
             </nav>
           </div>
         </div>
