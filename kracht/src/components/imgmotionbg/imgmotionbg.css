@@ -1,0 +1,77 @@
+.imgcon {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 90vw;
+  height: 80vh;
+  z-index: -1;
+  pointer-events: none;
+  max-width: 100vw;
+
+}
+
+.pinkimg {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.blueimg {
+  position: absolute;
+  top: 20vh;
+  left: 30vh;
+  filter: brightness(-3);
+}
+
+@media screen and (max-width: 800px) {
+  .imgcon {
+    opacity: 1;
+    width: 100vw;
+    height: 80vh;
+
+  }
+
+  .blueimg {
+    position: absolute;
+    top: 10vh;
+    left: 20vh;
+
+  }
+}
+
+/* .imgcon{
+      position: absolute;  
+      top: 10vh;
+      left: 0;
+      width: 100vw;
+      height: 60vh;
+      z-index: -1;
+      pointer-events: none;
+    
+    }
+    .pinkimg{
+    top:0;
+    left: 0;
+    position:absolute;
+  
+    }
+    .blueimg{
+    
+      position: absolute;
+      top:10vh;
+      left:20vh;
+  
+      }
+      @media screen and (max-width: 800px) {
+        .imgcon{
+  
+          width: 700px;
+          height: 700px;
+          opacity: 1;
+        }
+        .blueimg{
+          top:20vh;
+          left:30vh;
+      
+          }
+      } */

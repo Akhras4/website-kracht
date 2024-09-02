@@ -1,0 +1,103 @@
+section {
+    width: 100vw;
+    min-height: 100%;
+    overflow: visible;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.section hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 100;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+
+   
+}
+
+.section h1 {
+    font-size: calc(1rem + 3vw);
+    line-height: 1.2;
+    font-weight: bold;
+    color: white;
+}
+
+.section p {
+    text-align: left;
+}
+
+.sectionFlexcontiner {
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    margin-top: 7vh;
+    width: 100vw;
+    height: fit-content;
+    gap: 15px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .sectionFlexcontiner {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 10px;
+        position: relative;
+       
+    }
+
+
+    /* WebKit browsers (Chrome, Safari) */
+    .sectionFlexcontiner::-webkit-scrollbar {
+        height: 10px;
+        align-content: center;
+     
+    }
+
+    .sectionFlexcontiner::-webkit-scrollbar-track {
+        background: #161e23;
+        width: 50vw;
+        align-content: center;
+    }
+    .sectionFlexcontiner::-webkit-scrollbar-thumb {
+        background: #63c4dc !important;
+        position: absolute;
+        width: 16px ;
+        height: 10px;
+    }
+    .sectionFlexcontiner::-webkit-scrollbar-thumb:hover {
+        background: rgb(156, 46, 129);
+    }
+    .sectionFlexcontiner::-webkit-scrollbar-thumb {
+        cursor: grab;
+    }
+
+    .sectionFlexcontiner .scrollbar-overlay {
+        cursor: grab;
+    }
+    .sectionFlexcontiner::-webkit-scrollbar-thumb:active {
+        cursor: grabbing;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .section h1 {
+        font-size: calc(1rem + 1vw);
+    }
+
+    .sectionFlexcontiner {
+        margin-top: 2vh;
+    }
+
+}
