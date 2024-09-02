@@ -1,5 +1,6 @@
 import React from 'react';
 import './textbutton.css'
+import { Link } from 'react-router-dom';
 interface TextButtonProps {
   text: string; 
   link: string;
@@ -9,7 +10,7 @@ interface TextButtonProps {
 const TextButton: React.FC<TextButtonProps> = ({ text, link,type }) => {
   return (
     <div className="button-container">
-    <a href={link} className="button-link" title={`Ontdek ${text}`}>
+    <Link to={link} className="button-link" title={`Ontdek ${text}`}>
       <button className="custom-button" type={type}>
         <div className="button-content-wrapper">
           <div className="button-text-wrapper">
@@ -18,7 +19,7 @@ const TextButton: React.FC<TextButtonProps> = ({ text, link,type }) => {
           </div>
         </div>
       </button>
-    </a>
+    </Link>
   </div>
   );
 };
