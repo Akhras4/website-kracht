@@ -1,6 +1,7 @@
 [build]
+  # Set your build output directory here
   publish = "kracht/dist"  # Ensure this matches your build output directory
-  # Uncomment and adjust the build command if necessary
+  # Add your build command if needed
   # command = "npm run build"  # Example build command; adjust as needed
 
 [[redirects]]
