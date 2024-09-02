@@ -1,32 +1,33 @@
 import React from "react"
 import './footer.css'
 // import Imgbg from "../imgbg/imgbg"
+import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
     return (
         <footer className="footer">
             {/* <Imgbg /> */}
             <div className="col">
                 <h6>snel naar</h6>
-                <a href="/"><p>Home</p></a>
-                <a href="/over-ons/"><p>over Kracht</p></a>
-                <a href=""><p> Cases</p></a>
-                <a href=""><p>Blog</p></a>
-                <a href="/work-hard-play-harder/"><p>Vactures</p></a>
-                <a href="/contact/"><p>Conatact</p></a>
+                <Link to="/"><p>Home</p></Link>
+                <Link to="/over-ons/"><p>over Kracht</p></Link>
+                <Link to=""><p> Cases</p></Link>
+                <Link to=""><p>Blog</p></Link>
+                <Link to="/work-hard-play-harder/"><p>Vactures</p></Link>
+                <Link to="/contact/"><p>Conatact</p></Link>
             </div>
             <div className="col">
                 <h6>over kracht</h6>
-                <a href="/over-ons/"><p>Team & cultuur</p></a>
-                <a href="/over-ons/werkwijze/"><p>Werkwijze</p></a>
-                <a href="/diensten/social-content/"><p>Diensten</p></a>
-                <a href="/over-ons/duurzaam-ondernemen/"><p>Duurzaam ondernemen</p></a>
+                <Link to="/over-ons/"><p>Team & cultuur</p></Link>
+                <Link to="/over-ons/werkwijze/"><p>Werkwijze</p></Link>
+                <Link to="/diensten/social-content/"><p>Diensten</p></Link>
+                <Link to="/over-ons/duurzaam-ondernemen/"><p>Duurzaam ondernemen</p></Link>
             </div>
             <div className="col" >
                 <h6>Onze diensten</h6>
-               <a href="/diensten/digital-business-strategy"><p>Digital business strategy</p></a> 
-                <a href="/diensten/digital-marketing/"><p>Digital marketing</p></a>
-                <a href="/diensten/design-en-technology/"><p>Design & technology</p></a>
-                <a href="/diensten/social-content/"><p>Social conten</p></a>
+               <Link to="/diensten/digital-business-strategy"><p>Digital business strategy</p></Link> 
+                <Link to="/diensten/digital-marketing/"><p>Digital marketing</p></Link>
+                <Link to="/diensten/design-en-technology/"><p>Design & technology</p></Link>
+                <Link to="/diensten/social-content/"><p>Social conten</p></Link>
             </div>
             <div className="col">
                 <h6>Get in Touch!</h6>

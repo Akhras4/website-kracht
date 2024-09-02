@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from './navbar';
 import './headerandnav.css'
+import { Link } from 'react-router-dom';
 
 const Header: React.FC  = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-[9999] pointer-events-none">
       <header className="container mx-auto pt-12 flex items-center justify-between duration-300 ease-in-out scrolled">
-        <a href="/" className="pointer-events-auto " id="logo-wrapper">
+        <Link to="/" className="pointer-events-auto " id="logo-wrapper">
           <div className="kracht-logo">
             <div className="kracht-eye ">
             <svg
@@ -50,9 +51,9 @@ const Header: React.FC  = () => {
             </svg>
             </div>
           </div>
-        </a>
+        </Link>
         <div className="fixed bottom-0 right-0 z-[9999] pb-7 pr-8 xl:pb-14 xl:pr-16 pointer-events-none">
-          <a href="#" className="pointer-events-auto button-border group">
+          <Link to="#" className="pointer-events-auto button-border group">
             <span className="label button-label">Request Access</span>
             <span className="button-border__arrow-wrapper">
               <svg
@@ -69,7 +70,7 @@ const Header: React.FC  = () => {
                 />
               </svg>
             </span>
-          </a>
+          </Link>
         </div>
         <Navbar />
       </header>
