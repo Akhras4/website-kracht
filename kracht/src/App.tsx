@@ -19,6 +19,7 @@ import Duurzaamondernemen from './pages/overons/duurzaamondernemen.tsx';
 import Werkwijze from './pages/overons/werkwijze.tsx';
 import Workhardplayharder from './pages/jobs/workhardplayharder.tsx';
 import Contact from './pages/contact/contact.tsx';
+import Nopage from './pages/nopage/nopage.tsx';
 function App() {
     return (
         <div className='App'>
@@ -40,7 +41,7 @@ function App() {
                     <Route path='/over-ons/werkwijze/' element={<Werkwijze />} />
                     <Route path='/work-hard-play-harder/' element={<Workhardplayharder />} />
                     <Route path='/contact/' element={<Contact />} />
-                    {/* <Route path="*" element={<Nopage />} /> */}
+                    <Route path="*" element={<Nopage />} />
                 </Routes>
             </BrowserRouter>
         <Emailms />
